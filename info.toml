@@ -119,12 +119,11 @@ name = "functions4"
 path = "exercises/functions/functions4.rs"
 mode = "compile"
 hint = """
-The error message points to line 17 and says it expects a type after the
-`->`. This is where the function's return type should be -- take a look at
-the `is_even` function for an example!
+错误信息指向了第17行并说它期待在 `->` 之后有一个类型。
+这是函数的返回值类型应处的位置 -- 看一下示例函数 `is_even`！
 
-Also: Did you figure out that, technically, u32 would be the more fitting type
-for the prices here, since they can't be negative? If so, kudos!"""
+同样的：你是否有注意到，技术上，这里 u32 会是更适合价格的类型，因为它们不能为负数？
+如果是这样的话，那就太好了！"""
 
 [[exercises]]
 name = "functions5"
