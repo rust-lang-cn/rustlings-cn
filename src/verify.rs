@@ -154,14 +154,14 @@ fn prompt_for_completion(exercise: &Exercise, prompt_output: Option<String>) -> 
     let no_emoji = env::var("NO_EMOJI").is_ok();
 
     let clippy_success_msg = if no_emoji {
-        "The code is compiling, and Clippy is happy!"
+        "正在编译代码，并且 Clippy 很快乐！"
     } else {
-        "The code is compiling, and 📎 Clippy 📎 is happy!"
+        "正在编译代码, 并且 📎 Clippy 📎 很快乐！"
     };
 
     let success_msg = match exercise.mode {
-        Mode::Compile => "The code is compiling!",
-        Mode::Test => "The code is compiling, and the tests pass!",
+        Mode::Compile => "正在编译代码!",
+        Mode::Test => "正在编译代码，并且测试通过了",
         Mode::Clippy => clippy_success_msg,
     };
 
