@@ -5,8 +5,8 @@ name = "intro1"
 path = "exercises/intro/intro1.rs"
 mode = "compile"
 hint = """
-Remove the I AM NOT DONE comment in the exercises/intro/intro1.rs file
-to move on to the next exercise."""
+删除文件 exercises/intro/intro1.rs 中的注释 I AM NOT DONE
+以前往下一个练习。"""
 
 [[exercises]]
 name = "intro2"
