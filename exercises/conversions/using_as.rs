@@ -4,7 +4,7 @@
 //
 // The goal is to make sure that the division does not fail to compile
 // and returns the proper type.
-// Execute `rustlings hint using_as` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint using_as` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

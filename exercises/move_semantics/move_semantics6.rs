@@ -1,5 +1,5 @@
 // move_semantics6.rs
-// Execute `rustlings hint move_semantics6` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint move_semantics6` 或在观察模式下使用 `hint` 子命令来获取提示。
 // You can't change anything except adding or removing references.
 
 // I AM NOT DONE

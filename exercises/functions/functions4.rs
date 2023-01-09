@@ -1,5 +1,5 @@
 // functions4.rs
-// Execute `rustlings hint functions4` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint functions4` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // This store is having a sale where if the price is an even number, you get
 // 10 Rustbucks off, but if it's an odd number, it's 3 Rustbucks off.

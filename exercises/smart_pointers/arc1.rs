@@ -16,7 +16,7 @@
 // Make this code compile by filling in a value for `shared_numbers` where the
 // first TODO comment is, and create an initial binding for `child_numbers`
 // where the second TODO comment is. Try not to create any copies of the `numbers` Vec!
-// Execute `rustlings hint arc1` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint arc1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

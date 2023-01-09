@@ -1,6 +1,6 @@
 // primitive_types4.rs
 // Get a slice out of Array a where the ??? is so that the test passes.
-// Execute `rustlings hint primitive_types4` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint primitive_types4` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

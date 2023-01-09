@@ -1,5 +1,5 @@
 // errors4.rs
-// Execute `rustlings hint errors4` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint errors4` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

@@ -4,7 +4,7 @@
 // to the annotated parameters and the return type, what do
 // we need to change?
 //
-// Execute `rustlings hint lifetimes2` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint lifetimes2` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

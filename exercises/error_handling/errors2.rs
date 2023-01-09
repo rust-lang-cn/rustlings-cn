@@ -15,7 +15,7 @@
 
 // There are at least two ways to implement this that are both correct-- but
 // one is a lot shorter!
-// Execute `rustlings hint errors2` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint errors2` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 
