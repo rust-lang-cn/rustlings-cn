@@ -1,176 +1,172 @@
 # rustlings 🦀❤️
 
-Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
+你好，欢迎来到 `rustlings`。这个项目包括一些让你熟悉阅读和编写 Rust 代码的小练习。这包括阅读和响应编译器信息！
 
-_...looking for the old, web-based version of Rustlings? Try [here](https://github.com/rust-lang/rustlings/tree/rustlings-1)_
+_...寻找老版本的基于web的 Rustlings 版本？ 试试 [这里](https://github.com/rust-lang/rustlings/tree/rustlings-1)_
 
-Alternatively, for a first-time Rust learner, there are several other resources:
+或者，对于第一次学习 Rust 的人，这里还有一些其它的资源：
 
-- [The Book](https://doc.rust-lang.org/book/index.html) - The most comprehensive resource for learning Rust, but a bit theoretical sometimes. You will be using this along with Rustlings!
-- [Rust By Example](https://doc.rust-lang.org/rust-by-example/index.html) - Learn Rust by solving little exercises! It's almost like `rustlings`, but online
+- [Rust 程序设计语言](https://doc.rust-lang.org/book/index.html) - 学习 Rust 最全面的资源，但有时有点偏理论性。你将和 Rustlings 一起使用它。
+- [通过例子学 Rust](https://doc.rust-lang.org/rust-by-example/index.html) - 通过解决小练习来学习 Rust！ 这很像 `rustlings`，但是它是在线的。
 
-## Getting Started
+## 开始
 
-_Note: If you're on MacOS, make sure you've installed Xcode and its developer tools by typing `xcode-select --install`._
-_Note: If you're on Linux, make sure you've installed gcc. Deb: `sudo apt install gcc`. Yum: `sudo yum -y install gcc`._
+_注意：如果你使用 MacOS，请确认你已经通过输入 `xcode-select --install` 安装了 Xcode 以及它的开发者工具_
 
-You will need to have Rust installed. You can get it by visiting https://rustup.rs. This'll also install Cargo, Rust's package/project manager.
+_注意：如果你使用 Linux，请确认你已经安装了 gcc。Deb: `sudo apt install gcc`。 Yum: `sudo yum -y install gcc`。_
+
+你需要安装 Rust。你可以通过 https://rustup.rs 获取。这同时将会安装 Cargo，其为 Rust 的包/项目管理器。
 
 ## MacOS/Linux
 
-Just run:
+只需要执行:
 
 ```bash
 curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash
-# Or if you want it to be installed to a different path:
+# 或者如果你希望在其它路径上安装
 curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | bash -s mypath/
 ```
 
-This will install Rustlings and give you access to the `rustlings` command. Run it to get started!
+这将会安装 Rustlings 并让你可以使用 `rustlings` 命令，运行它开始吧！
 
 ### Nix
-Basically: Clone the repository at the latest tag, finally run `nix develop` or `nix-shell`.
+基本上：在最新 tag 处克隆本仓库，最后运行 `nix develop` 或者 `nix-shell`。
 
 ```bash
-# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.3.0)
+# 在 https://github.com/rust-lang/rustlings/releases/latest 获取最新版本 (编辑此文档时是 5.3.0)
 git clone -b 5.3.0 --depth 1 https://github.com/rust-lang/rustlings
 cd rustlings
-# if nix version > 2.3
+# 如果 nix 版本号 > 2.3
 nix develop
-# if nix version <= 2.3
+# 如果 nix 版本号 <= 2.3
 nix-shell
 ```
 
 ## Windows
 
-In PowerShell (Run as Administrator), set `ExecutionPolicy` to `RemoteSigned`:
+在 Powershell （使用管理员身份运行），设置 `ExecutionPolicy` 为 `RemoteSigned`：
 
 ```ps1
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-Then, you can run:
+然后，你可以运行：
 
 ```ps1
 Start-BitsTransfer -Source https://raw.githubusercontent.com/rust-lang/rustlings/main/install.ps1 -Destination $env:TMP/install_rustlings.ps1; Unblock-File $env:TMP/install_rustlings.ps1; Invoke-Expression $env:TMP/install_rustlings.ps1
 ```
 
-To install Rustlings. Same as on MacOS/Linux, you will have access to the `rustlings` command after it. Keep in mind that this works best in PowerShell, and any other terminals may give you errors.
+安装 Rustlings。与 MacOS/Linux 一样，安装完成之后你将可以访问 `rustlings` 命令。请注意，它在 PowerShell 中表现最好，任何其它的终端都有可能会出错。
 
-If you get a permission denied message, you might have to exclude the directory where you cloned Rustlings in your antivirus.
+如果你收到权限被拒绝的信息，你可能必须在防病毒软件中排除克隆 Rustlings 的目录。
 
-## Browser
+## 浏览器
 
-[Run on Repl.it](https://repl.it/github/rust-lang/rustlings)
+[在 Repl.it 运行](https://repl.it/github/rust-lang/rustlings)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rust-lang/rustlings)
+[![在 Gitpod 打开](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rust-lang/rustlings)
 
-## Manually
+## 手动安装
 
-Basically: Clone the repository at the latest tag, run `cargo install --path .`.
+基本上：在最新 tag 处克隆该仓库，执行 `cargo install --path .` 。
 
 ```bash
-# find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.3.0)
+# 在 https://github.com/rust-lang/rustlings/releases/latest 获取最新版本 (编辑此文档时是 5.3.0)
 git clone -b 5.3.0 --depth 1 https://github.com/rust-lang/rustlings
 cd rustlings
 cargo install --force --path .
 ```
 
-If there are installation errors, ensure that your toolchain is up to date. For the latest, run:
+如果遇到任何安装错误，请确保你的工具链是最新的。运行以下命令来获取最新版本：
 
 ```bash
 rustup update
 ```
 
-Then, same as above, run `rustlings` to get started.
+然后，与之前说的一样，运行 `rustlings` 以开始。
 
-## Doing exercises
+## 做练习
 
-The exercises are sorted by topic and can be found in the subdirectory `rustlings/exercises/<topic>`. For every topic there is an additional README file with some resources to get you started on the topic. We really recommend that you have a look at them before you start.
+练习按主题排序，你可以在子目录 `rustlings/exercises/<topic>` 下看到。每个主题有一个额外的 README 文件，内含一些资源以帮助你开始该主题。我们强烈推荐你在开始练习之前查看这些资源。
 
-The task is simple. Most exercises contain an error that keeps them from compiling, and it's up to you to fix it! Some exercises are also run as tests, but rustlings handles them all the same. To run the exercises in the recommended order, execute:
+任务是简单的。大多数练习包含一个错误导致它们无法被编译，需要你来修复它！一些练习也作为测试运行，但是 rustlings 处理他们的方式是一样的。要以推荐的顺序运行练习，请执行：
 
 ```bash
 rustlings watch
 ```
 
-This will try to verify the completion of every exercise in a predetermined order (what we think is best for newcomers). It will also rerun automatically every time you change a file in the `exercises/` directory. If you want to only run it once, you can use:
+这将会尝试按预定顺序（我们认为最适合新手的顺序）验证每个练习的完成情况。它也会在你每次更改 `exercises/` 路径下的文件时自动运行。如果你想要它只运行一次，可以使用：
 
 ```bash
 rustlings verify
 ```
 
-This will do the same as watch, but it'll quit after running.
+这与 watch 功能做的事情一样，但是会在运行完成后自动退出。
 
-In case you want to go by your own order, or want to only verify a single exercise, you can run:
+如果你想要以你自己的顺序进行，或者只想验证一个练习，可以运行：
 
 ```bash
 rustlings run myExercise1
 ```
 
-Or simply use the following command to run the next unsolved exercise in the course:
+或者简单地使用下面的命令来运行课程中下一个未解决的问题：
 
 ```bash
 rustlings run next
 ```
 
-In case you get stuck, you can run the following command to get a hint for your
-exercise:
+如果遇到困难，可以运行以下命令来获取练习的提示：
 
 ```bash
 rustlings hint myExercise1
 ```
 
-You can also get the hint for the next unsolved exercise with the following command:
+你也可以通过以下指令获得下一个未解决问题的提示：
 
 ```bash
 rustlings hint next
 ```
 
-To check your progress, you can run the following command:
+可以通过以下指令检查你的进度：
 
 ```bash
 rustlings list
 ```
 
-## Testing yourself
+## 自我测评
 
-After every couple of sections, there will be a quiz that'll test your knowledge on a bunch of sections at once. These quizzes are found in `exercises/quizN.rs`.
+在每几个部分之后，会有一个测验来测试你在这些部分的所学内容。这些测试可以在 `exercises/quizN.rs` 中找到。
 
-## Enabling `rust-analyzer`
+## 启用 `rust-analyzer`
 
-Run the command `rustlings lsp` which will generate a `rust-project.json` at the root of the project, this allows [rust-analyzer](https://rust-analyzer.github.io/) to parse each exercise.
+运行 `rustlings lsp` 命令来在工程的根目录生成 `rust-project.json`，这会允许 [rust-analyzer](https://rust-analyzer.github.io/) 解析每个练习。
 
-## Continuing On
+## 更进一步
 
-Once you've completed Rustlings, put your new knowledge to good use! Continue practicing your Rust skills by building your own projects, contributing to Rustlings, or finding other open-source projects to contribute to.
+完成 Rustlings 后，充分利用你的新知识！通过构建你自己的项目、为 Rustlings 或你找到的其它开源项目做贡献，继续练习你的 Rust 技能。
 
-## Uninstalling Rustlings
+## 卸载 Rustlings
 
-If you want to remove Rustlings from your system, there are two steps. First, you'll need to remove the exercises folder that the install script created
-for you:
+如果你想要从你的系统中移除 Rustlings，需要进行两个步骤。首先，你需要删除安装脚本为你创建的练习文件夹：
 
 ```bash
-rm -rf rustlings # or your custom folder name, if you chose and or renamed it
+rm -rf rustlings # 或者你自定义的文件夹名字，如果你选择或重命名了它
 ```
 
-Second, since Rustlings got installed via `cargo install`, it's only reasonable to assume that you can also remove it using Cargo, and
-exactly that is the case. Run `cargo uninstall` to remove the `rustlings` binary:
+然后，由于 Rustlings 是通过 `cargo install` 安装的，因此可以合理地假设你也可以使用 Cargo 将其删除，事实确实如此。运行 `cargo uninstall` 以删除 `rustlings` 的二进制可执行文件：
 
 ```bash
 cargo uninstall rustlings
 ```
 
-Now you should be done!
+现在你应该已经搞定了！
 
-## Contributing
+## 贡献
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md).
+详见 [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-Development-focused discussion about Rustlings happens in the [**rustlings** stream](https://rust-lang.zulipchat.com/#narrow/stream/334454-rustlings)
-on the [Rust Project Zulip](https://rust-lang.zulipchat.com). Feel free to start a new thread there
-if you have ideas or suggestions!
+关于 Rustlings 的以开发为中心的讨论在 [Zulip 上的 Rust 项目](https://rust-lang.zulipchat.com) 的 [**rustlings** 流](https://rust-lang.zulipchat.com/#narrow/stream/334454-rustlings) 中发生。如果你有想法或建议，请随时在那里开启一个新线程！
 
-## Contributors ✨
+## 贡献者 ✨
 
-Thanks goes to the wonderful people listed in [AUTHORS.md](./AUTHORS.md) 🎉
+感谢 [AUTHORS.md](./AUTHORS.md) 中列出的优秀人员 🎉
