@@ -9,6 +9,6 @@ fn main() {
 
 fn call_me(num:) {
     for i in 0..num {
-        println!("Ring! Call number {}", i + 1);
+        println!("铛铛！呼叫号码 {}", i + 1);
     }
 }

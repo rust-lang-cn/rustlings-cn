@@ -102,8 +102,8 @@ name = "functions2"
 path = "exercises/functions/functions2.rs"
 mode = "compile"
 hint = """
-Rust requires that all parts of a function's signature have type annotations,
-but `call_me` is missing the type annotation of `num`."""
+Rust 要求函数签名的所有部分都有类型注解，
+但是 `call_me` 缺少了 `num` 的类型注解。"""
 
 [[exercises]]
 name = "functions3"
