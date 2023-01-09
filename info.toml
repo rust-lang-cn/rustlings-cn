@@ -52,9 +52,8 @@ name = "variables4"
 path = "exercises/variables/variables4.rs"
 mode = "compile"
 hint = """
-In Rust, variable bindings are immutable by default. But here we're trying
-to reassign a different value to x! There's a keyword we can use to make
-a variable binding mutable instead."""
+在 Rust 中，变量绑定默认是不可变的。但是这里我们尝试重新赋给 x 一个不同的值！
+作为替代，有一个关键字让我们将变量设置为可变的。"""
 
 [[exercises]]
 name = "variables5"
