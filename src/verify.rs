@@ -146,9 +146,9 @@ fn prompt_for_completion(exercise: &Exercise, prompt_output: Option<String>) -> 
     };
 
     match exercise.mode {
-        Mode::Compile => success!("Successfully ran {}!", exercise),
-        Mode::Test => success!("Successfully tested {}!", exercise),
-        Mode::Clippy => success!("Successfully compiled {}!", exercise),
+        Mode::Compile => success!("成功运行 {}！", exercise),
+        Mode::Test => success!("成功测试 {}！", exercise),
+        Mode::Clippy => success!("成功编译 {}！", exercise),
     }
 
     let no_emoji = env::var("NO_EMOJI").is_ok();
@@ -174,16 +174,16 @@ fn prompt_for_completion(exercise: &Exercise, prompt_output: Option<String>) -> 
     println!();
 
     if let Some(output) = prompt_output {
-        println!("Output:");
+        println!("输出:");
         println!("{}", separator());
         println!("{output}");
         println!("{}", separator());
         println!();
     }
 
-    println!("You can keep working on this exercise,");
+    println!("你可以继续尝试这个练习，");
     println!(
-        "or jump into the next one by removing the {} comment:",
+        "或者通过删除 {} 注释来进入下一个练习：",
         style("`I AM NOT DONE`").bold()
     );
     println!();
