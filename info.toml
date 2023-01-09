@@ -30,13 +30,12 @@ name = "variables2"
 path = "exercises/variables/variables2.rs"
 mode = "compile"
 hint = """
-The compiler message is saying that Rust cannot infer the type that the
-variable binding `x` has with what is given here.
-What happens if you annotate line 7 with a type annotation?
-What if you give x a value?
-What if you do both?
-What type should x be, anyway?
-What if x is the same type as 10? What if it's a different type?"""
+编译器信息说 Rust 根据给定的信息无法推断变量 `x` 绑定的变量的类型。
+如果你在第7行加上类型注解会发生什么？
+如果你给 x 一个值呢？
+如果你两个都做呢？
+不管怎样，x 应该是什么类型的？
+如果 x 和 10 是同一个类型会怎样？如果不是同一个类型会怎样？"""
 
 [[exercises]]
 name = "variables3"
