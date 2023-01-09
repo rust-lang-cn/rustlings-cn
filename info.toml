@@ -42,11 +42,10 @@ name = "variables3"
 path = "exercises/variables/variables3.rs"
 mode = "compile"
 hint = """
-Oops! In this exercise, we have a variable binding that we've created on
-line 7, and we're trying to use it on line 8, but we haven't given it a
-value. We can't print out something that isn't there; try giving x a value!
-This is an error that can cause bugs that's very easy to make in any
-programming language -- thankfully the Rust compiler has caught this for us!"""
+哎呀！在这个练习中，我们在第7行创建了一个变量绑定，
+并且尝试在第8行使用，但是我们没有给它一个值。
+我们无法打印一个不存在的东西；尝试给 x 一个值！
+这是一个在任何编程语言中都很容易犯的会导致 bug 的错误 -- 感谢 Rust 编译器为我们捕获了它！"""
 
 [[exercises]]
 name = "variables4"
