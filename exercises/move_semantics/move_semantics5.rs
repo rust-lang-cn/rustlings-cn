@@ -1,7 +1,7 @@
 // move_semantics5.rs
 // Make me compile only by reordering the lines in `main()`, but without
 // adding, changing or removing any of them.
-// Execute `rustlings hint move_semantics5` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint move_semantics5` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

@@ -2,7 +2,7 @@
 // Structs contain data, but can also have logic. In this exercise we have
 // defined the Package struct and we want to test some logic attached to it.
 // Make the code compile and the tests pass!
-// Execute `rustlings hint structs3` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint structs3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

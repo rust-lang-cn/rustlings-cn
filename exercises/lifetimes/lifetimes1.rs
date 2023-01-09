@@ -5,7 +5,7 @@
 // of going out of scope before it is used. Remember, references are borrows
 // and do not own their own data. What if their owner goes out of scope?
 //
-// Execute `rustlings hint lifetimes1` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint lifetimes1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

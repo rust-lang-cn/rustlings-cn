@@ -1,7 +1,7 @@
 // iterators2.rs
 // In this exercise, you'll learn some of the unique advantages that iterators
 // can offer. Follow the steps to complete the exercise.
-// Execute `rustlings hint iterators2` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint iterators2` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

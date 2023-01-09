@@ -1,6 +1,6 @@
 // move_semantics2.rs
 // Make me compile without changing line 13 or moving line 10!
-// Execute `rustlings hint move_semantics2` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint move_semantics2` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

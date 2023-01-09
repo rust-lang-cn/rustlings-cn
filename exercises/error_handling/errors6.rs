@@ -6,7 +6,7 @@
 // we define a custom error type to make it possible for callers to decide
 // what to do next when our function returns an error.
 
-// Execute `rustlings hint errors6` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint errors6` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

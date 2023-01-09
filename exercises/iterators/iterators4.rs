@@ -1,5 +1,5 @@
 // iterators4.rs
-// Execute `rustlings hint iterators4` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint iterators4` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 
@@ -12,7 +12,7 @@ pub fn factorial(num: u64) -> u64 {
     // - additional variables
     // For an extra challenge, don't use:
     // - recursion
-    // Execute `rustlings hint iterators4` for hints.
+    // 执行 `rustlings hint iterators4` for hints.
 }
 
 #[cfg(test)]

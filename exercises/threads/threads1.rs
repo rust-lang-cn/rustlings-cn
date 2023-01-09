@@ -1,5 +1,5 @@
 // threads1.rs
-// Execute `rustlings hint threads1` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint threads1` 或在观察模式下使用 `hint` 子命令来获取提示。
 // This program should wait until all the spawned threads have finished before exiting.
 
 // I AM NOT DONE

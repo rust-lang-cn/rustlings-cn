@@ -1,7 +1,7 @@
 // This shopping list program isn't compiling!
 // Use your knowledge of generics to fix it.
 
-// Execute `rustlings hint generics1` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint generics1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

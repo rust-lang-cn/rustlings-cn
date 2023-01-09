@@ -2,7 +2,7 @@
 //
 // Lifetimes are also needed when structs hold references.
 //
-// Execute `rustlings hint lifetimes3` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint lifetimes3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

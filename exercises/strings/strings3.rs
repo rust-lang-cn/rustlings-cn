@@ -1,5 +1,5 @@
 // strings3.rs
-// Execute `rustlings hint strings3` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint strings3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

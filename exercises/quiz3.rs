@@ -12,7 +12,7 @@
 // to support alphabetical report cards. Change the Grade in the second test to "A+"
 // to show that your changes allow alphabetical grades.
 
-// Execute `rustlings hint quiz3` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint quiz3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

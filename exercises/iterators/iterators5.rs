@@ -6,7 +6,7 @@
 // imperative style for loops. Recreate this counting functionality using
 // iterators. Only the two iterator methods (count_iterator and
 // count_collection_iterator) need to be modified.
-// Execute `rustlings hint iterators5` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint iterators5` 或在观察模式下使用 `hint` 子命令来获取提示。
 //
 // Make the code compile and the tests pass.
 

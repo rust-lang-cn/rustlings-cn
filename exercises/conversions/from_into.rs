@@ -1,7 +1,7 @@
 // The From trait is used for value-to-value conversions.
 // If From is implemented correctly for a type, the Into trait should work conversely.
 // You can read more about it at https://doc.rust-lang.org/std/convert/trait.From.html
-// Execute `rustlings hint from_into` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint from_into` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 #[derive(Debug)]
 struct Person {

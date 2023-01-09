@@ -14,7 +14,7 @@
 
 // What can we use to describe both errors? In other words, is there a trait which both errors implement?
 
-// Execute `rustlings hint errors5` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint errors5` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

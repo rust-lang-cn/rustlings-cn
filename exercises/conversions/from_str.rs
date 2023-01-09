@@ -4,7 +4,7 @@
 // Additionally, upon implementing FromStr, you can use the `parse` method
 // on strings to generate an object of the implementor type.
 // You can read more about it at https://doc.rust-lang.org/std/str/trait.FromStr.html
-// Execute `rustlings hint from_str` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint from_str` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 use std::num::ParseIntError;
 use std::str::FromStr;

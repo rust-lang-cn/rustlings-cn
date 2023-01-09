@@ -6,7 +6,7 @@
 // This module helps you get familiar with the structure of using an iterator and
 // how to go through elements within an iterable collection.
 //
-// Execute `rustlings hint iterators1` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint iterators1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

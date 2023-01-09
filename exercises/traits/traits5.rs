@@ -2,7 +2,7 @@
 //
 // Your task is to replace the '??' sections so the code compiles.
 // Don't change any line other than the marked one.
-// Execute `rustlings hint traits5` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint traits5` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 

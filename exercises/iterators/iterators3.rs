@@ -4,7 +4,7 @@
 // 1. Complete the divide function to get the first four tests to pass.
 // 2. Get the remaining tests to pass by completing the result_with_list and
 //    list_of_results functions.
-// Execute `rustlings hint iterators3` or use the `hint` watch subcommand for a hint.
+// 执行 `rustlings hint iterators3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 
