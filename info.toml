@@ -130,12 +130,11 @@ name = "functions5"
 path = "exercises/functions/functions5.rs"
 mode = "compile"
 hint = """
-This is a really common error that can be fixed by removing one character.
-It happens because Rust distinguishes between expressions and statements: expressions return a value based on their operand(s), and statements simply return a () type which behaves just like `void` in C/C++ language.
-We want to return a value of `i32` type from the `square` function, but it is returning a `()` type...
-They are not the same. There are two solutions:
-1. Add a `return` ahead of `num * num;`
-2. remove `;`, make it to be `num * num`"""
+这是一个非常常见的错误，可以通过删除一个字符解决。
+这是因为 Rust 区分了表达式和语句：表达式基于其操作返回一个值，而语句则返回一个 () 类型，其行为与 C/C++ 中的 `void`类似。
+它们不是同一个东西。有两种解决方法：
+1. 在 `num * num;` 之前添加一个 `return`
+2. 删除 `;`，使其变为 `num * num`"""
 
 # IF
 
