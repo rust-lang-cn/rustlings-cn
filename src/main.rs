@@ -411,33 +411,35 @@ fn rustc_exists() -> bool {
         .unwrap_or(false)
 }
 
-const DEFAULT_OUT: &str = r#"Thanks for installing Rustlings!
+const DEFAULT_OUT: &str = r#"感谢你安装 Rustlings!
 
-Is this your first time? Don't worry, Rustlings was made for beginners! We are
-going to teach you a lot of things about Rust, but before we can get
-started, here's a couple of notes about how Rustlings operates:
+这是你的第一次吗？别担心， Rustlings 就是为新手打造的！
+我们将要教你很多关于Rust的东西，但是我们开始之前，
+这里有几条关于 Rustlings 如何运转的注意事项：
 
-1. The central concept behind Rustlings is that you solve exercises. These
-   exercises usually have some sort of syntax error in them, which will cause
-   them to fail compilation or testing. Sometimes there's a logic error instead
-   of a syntax error. No matter what error, it's your job to find it and fix it!
-   You'll know when you fixed it because then, the exercise will compile and
-   Rustlings will be able to move on to the next exercise.
-2. If you run Rustlings in watch mode (which we recommend), it'll automatically
-   start with the first exercise. Don't get confused by an error message popping
-   up as soon as you run Rustlings! This is part of the exercise that you're
-   supposed to solve, so open the exercise file in an editor and start your
-   detective work!
-3. If you're stuck on an exercise, there is a helpful hint you can view by typing
-   'hint' (in watch mode), or running `rustlings hint exercise_name`.
-4. If an exercise doesn't make sense to you, feel free to open an issue on GitHub!
-   (https://github.com/rust-lang/rustlings/issues/new). We look at every issue,
-   and sometimes, other learners do too so you can help each other out!
-5. If you want to use `rust-analyzer` with exercises, which provides features like 
-   autocompletion, run the command `rustlings lsp`. 
+1. Rustlings 背后的核心思想是你解决练习。这些
+   练习通常含有一些语法错误，这将会导致
+   它们编译失败或测试失败。有时会有逻辑错误而不是
+   语法错误。不管是什么错误，你需要找到它并修复它！
+   当你修复问题之后，你会知道，因为这个练习将正常编译而且
+   Rustlings 将可以前往下一个练习。
 
-Got all that? Great! To get started, run `rustlings watch` in order to get the first
-exercise. Make sure to have your editor open!"#;
+2. 如果你以观察模式（我们推荐的模式）运行 Rustlings，它将会自动
+   从第一个练习开始。当你运行 Rustlings 的时候，不要因为弹出的错误信息而感到疑惑！
+   这是你应该解决的练习的一部分，所以在编辑器打开练习文件并开始你的侦探工作！
+
+3. 如果你被一个练习卡住了，这里有一个有用的提示，你可以通过键入
+   'hint'（在观察模式），或者执行 `rustlings hint 练习名字`进行访问。
+
+4. 如果一个练习对你没有意义，那么可以在Github上打开一个issue！
+   (https://github.com/rust-lang/rustlings/issues/new)。我们关注每一个问题，
+   并且有时，其它学习者也会做同样的事情所以你们可以相互帮助！
+
+5. 如果你想要在练习中使用 `rust-analyzer`，它可以提供一些特性比如
+   自动编译，执行命令 `rustlings lsp`。
+
+都知道了吗？太好了！执行 `rustlings watch` 以开始第一个
+练习。请确保你已经打开了你的编辑器！"#;
 
 const FENISH_LINE: &str = r#"+----------------------------------------------------+
 |          You made it to the Fe-nish line!          |
@@ -466,7 +468,7 @@ You can also contribute your own exercises to help the greater community!
 Before reporting an issue or contributing, please read our guidelines:
 https://github.com/rust-lang/rustlings/blob/main/CONTRIBUTING.md"#;
 
-const WELCOME: &str = r#"       welcome to...
+const WELCOME: &str = r#"       欢迎来到...
                  _   _ _
   _ __ _   _ ___| |_| (_)_ __   __ _ ___
  | '__| | | / __| __| | | '_ \ / _` / __|
