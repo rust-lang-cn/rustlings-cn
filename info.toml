@@ -92,10 +92,10 @@ name = "functions1"
 path = "exercises/functions/functions1.rs"
 mode = "compile"
 hint = """
-This main function is calling a function that it expects to exist, but the
-function doesn't exist. It expects this function to have the name `call_me`.
-It expects this function to not take any arguments and not return a value.
-Sounds a lot like `main`, doesn't it?"""
+这个主程序正在调用一个期待存在的函数，但是这个函数不存在。
+它希望这个函数有一个名字 `call_me`。
+它希望这个函数不接受任何参数，也不返回值。
+这听起来很像 `main` 函数，不是吗？"""
 
 [[exercises]]
 name = "functions2"
