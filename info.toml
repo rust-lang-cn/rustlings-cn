@@ -110,10 +110,9 @@ name = "functions3"
 path = "exercises/functions/functions3.rs"
 mode = "compile"
 hint = """
-This time, the function *declaration* is okay, but there's something wrong
-with the place where we're calling the function.
-As a reminder, you can freely play around with different solutions in Rustlings!
-Watch mode will only jump to the next exercise if you remove the I AM NOT DONE comment."""
+这一次，函数 *声明* 是好的，但是在调用函数的地方有一些问题。
+提示一下，在 Rustlings 中你可以自由使用不同地方案！
+观察模式只会在你删除注释 I AM NOT DONE 之后跳转到下一个练习。"""
 
 [[exercises]]
 name = "functions4"
