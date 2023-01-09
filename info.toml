@@ -60,29 +60,29 @@ name = "variables5"
 path = "exercises/variables/variables5.rs"
 mode = "compile"
 hint = """
-In variables4 we already learned how to make an immutable variable mutable
-using a special keyword. Unfortunately this doesn't help us much in this exercise
-because we want to assign a different typed value to an existing variable. Sometimes
-you may also like to reuse existing variable names because you are just converting
-values to different types like in this exercise.
-Fortunately Rust has a powerful solution to this problem: 'Shadowing'!
-You can read more about 'Shadowing' in the book's section 'Variables and Mutability':
-https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing
-Try to solve this exercise afterwards using this technique."""
+在练习 variables4 中我们已经学习了如果使用特定关键字将一个不可变变量设为可变变量。
+不幸的是，这在这个练习中没有帮助，因为我们想要赋一个不同类型的值给一个已存在的变量。
+有时你可能也想重复使用已经存在的变量名因为你想要像这个练习一样只想要将其以不同类型的值覆盖。
+幸运的是，Rust 在这个问题上有一个强大的解决方案： 'Shadowing'（'遮蔽'）！
+你可以在书本的章节
+'变量和可变性' https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing
+（译者注：中文版本 https://rustwiki.org/zh-CN/book/ch03-01-variables-and-mutability.html#%E9%81%AE%E8%94%BD）
+中阅读到更多关于 'Shadowing' 的内容。
+然后尝试使用这项技术来解决这个练习吧。"""
 
 [[exercises]]
 name = "variables6"
 path = "exercises/variables/variables6.rs"
 mode = "compile"
 hint = """
-We know about variables and mutability, but there is another important type of
-variable available: constants.
-Constants are always immutable and they are declared with keyword 'const' rather
-than keyword 'let'.
-Constants types must also always be annotated.
+我们知道了变量和可变性，但是这里还有另一种重要类型的可用变量：常量。
+常量总是不可变的，并且它们以关键字 'const' 而不是关键字 'let' 进行声明。
+常量的类型也必须总是被注解。
 
-Read more about constants and the differences between variables and constants under 'Constants' in the book's section 'Variables and Mutability':
-https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants
+通过在书本的章节 '变量和可变性' 的 
+'常量' 小节 https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants
+（译者注：中文版本 https://rustwiki.org/zh-CN/book/ch03-01-variables-and-mutability.html#%E5%B8%B8%E9%87%8F）
+阅读更多关于常量以及其与变量的不同。
 """
 
 # FUNCTIONS
