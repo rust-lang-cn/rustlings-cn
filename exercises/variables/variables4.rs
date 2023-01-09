@@ -5,7 +5,7 @@
 
 fn main() {
     let x = 3;
-    println!("Number {}", x);
-    x = 5; // don't change this line
-    println!("Number {}", x);
+    println!("数字 {}", x);
+    x = 5; // 不要改变这一行
+    println!("数字 {}", x);
 }
