@@ -249,15 +249,13 @@ name = "vecs2"
 path = "exercises/vecs/vecs2.rs"
 mode = "test"
 hint = """
-Hint 1: `i` is each element from the Vec as they are being iterated. Can you try
-multiplying this?
+提示1：`i` 迭代为 Vec 的每个元素。你可以乘它吗？
 
-Hint 2: For the first function, there's a way to directly access the numbers stored
-in the Vec, using the * dereference operator. You can both access and write to the
-number that way.
+提示2：在第一函数中，有一个方法直接访问 Vec 中存储的数字，
+那就是使用 * 解引用操作符。以这种方式你可以访问和写入数字。
 
-After you've completed both functions, decide for yourself which approach you like
-better. What do you think is the more commonly used pattern under Rust developers?
+当你完成了两个函数后，自行决定你喜欢的的方式。
+你觉得 Rust 开发者最常用的模式是什么？
 """
 
 # MOVE SEMANTICS
