@@ -211,11 +211,12 @@ name = "primitive_types5"
 path = "exercises/primitive_types/primitive_types5.rs"
 mode = "compile"
 hint = """
-Take a look at the Data Types -> The Tuple Type section of the book:
+看一下书本的 数据类型 -> 元组类型 章节：
 https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
-Particularly the part about destructuring (second to last example in the section).
-You'll need to make a pattern to bind `name` and `age` to the appropriate parts
-of the tuple. You can do it!!"""
+https://rustwiki.org/zh-CN/book/ch03-02-data-types.html#%E5%85%83%E7%BB%84%E7%B1%BB%E5%9E%8B（中文版，译者注）
+特别是关于解构的部分（此章节的倒数第二个例子）。
+你需要使用模式绑定 `name` 和 `age` 到元组的相应部分。
+你可以做到的！！"""
 
 [[exercises]]
 name = "primitive_types6"
