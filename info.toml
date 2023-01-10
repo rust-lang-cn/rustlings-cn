@@ -166,7 +166,7 @@ hint = """
 name = "quiz1"
 path = "exercises/quiz1.rs"
 mode = "test"
-hint = "No hints this time ;)"
+hint = "这次没有提示 ;)"
 
 # PRIMITIVE TYPES
 
@@ -174,13 +174,13 @@ hint = "No hints this time ;)"
 name = "primitive_types1"
 path = "exercises/primitive_types/primitive_types1.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "这次没有提示 ;)"
 
 [[exercises]]
 name = "primitive_types2"
 path = "exercises/primitive_types/primitive_types2.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "这次没有提示 ;)"
 
 [[exercises]]
 name = "primitive_types3"
@@ -391,7 +391,7 @@ Have a look in The Book, to find out more about method implementations: https://
 name = "enums1"
 path = "exercises/enums/enums1.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "这次没有提示 ;)"
 
 [[exercises]]
 name = "enums2"
@@ -449,7 +449,7 @@ slice into an owned string, which you can then freely extend."""
 name = "strings4"
 path = "exercises/strings/strings4.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "这次没有提示 ;)"
 
 # MODULES
 
@@ -520,7 +520,7 @@ Learn more at https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-v
 name = "quiz2"
 path = "exercises/quiz2.rs"
 mode = "test"
-hint = "No hints this time ;)"
+hint = "这次没有提示 ;)"
 
 # OPTIONS
 
