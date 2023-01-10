@@ -187,13 +187,10 @@ name = "primitive_types3"
 path = "exercises/primitive_types/primitive_types3.rs"
 mode = "compile"
 hint = """
-There's a shorthand to initialize Arrays with a certain size that does not
-require you to type in 100 items (but you certainly can if you want!).
-For example, you can do:
+有一个根据确切大小来初始化数组的快捷方法，这样你就不用写100个值了（当然你也可以这样做！）。
+比如，你可以：
 let array = ["Are we there yet?"; 10];
-
-Bonus: what are some other things you could have that would return true
-for `a.len() >= 100`?"""
+另外：关于 `a.len() >= 100` 你还能使用什么其它方式实现吗？"""
 
 [[exercises]]
 name = "primitive_types4"
