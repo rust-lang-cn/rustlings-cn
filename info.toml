@@ -236,13 +236,12 @@ name = "vecs1"
 path = "exercises/vecs/vecs1.rs"
 mode = "test"
 hint = """
-In Rust, there are two ways to define a Vector.
-1. One way is to use the `Vec::new()` function to create a new vector
-  and fill it with the `push()` method.
-2. The second way, which is simpler is to use the `vec![]` macro and
-  define your elements inside the square brackets.
-Check this chapter: https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
-of the Rust book to learn more.
+在 Rust 中，有两种方法定义一个 Vector。
+1. 第一种方式是使用 `Vec::new()` 函数来创建一个新的vector，
+   并通过 `push()` 方法填充它。
+2. 第二种方式更简单一点，使用 `vec![]` 宏并在方括号中定义你的元素。
+详见 Rust 书的这个章节：https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
+https://rustwiki.org/zh-CN/book/ch08-01-vectors.html（中文版，译者注）
 """
 
 [[exercises]]
