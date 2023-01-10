@@ -223,11 +223,11 @@ name = "primitive_types6"
 path = "exercises/primitive_types/primitive_types6.rs"
 mode = "test"
 hint = """
-While you could use a destructuring `let` for the tuple here, try
-indexing into it instead, as explained in the last example of the
-Data Types -> The Tuple Type section of the book:
+这里你可以使用 `let` 解构一个元组，尝试一下使用索引来替代吧，
+这在书本的 数据类型 -> 元组类型 章节的最后一个例子中可以看到解释：
 https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
-Now you have another tool in your toolbox!"""
+https://rustwiki.org/zh-CN/book/ch03-02-data-types.html#%E5%85%83%E7%BB%84%E7%B1%BB%E5%9E%8B（中文版，译者注）
+现在你的工具箱中又多一件工具了！"""
 
 # VECS
 
