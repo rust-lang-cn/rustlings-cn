@@ -143,14 +143,14 @@ name = "if1"
 path = "exercises/if/if1.rs"
 mode = "test"
 hint = """
-It's possible to do this in one line if you would like!
-Some similar examples from other languages:
-- In C(++) this would be: `a > b ? a : b`
-- In Python this would be:  `a if a > b else b`
-Remember in Rust that:
-- the `if` condition does not need to be surrounded by parentheses
-- `if`/`else` conditionals are expressions
-- Each condition is followed by a `{}` block."""
+如果你想要的话，只用一行来完成是可行的！
+一些来自其它语言的相似例子：
+- 在 C(++) 中这会是： `a > b ? a : b`
+- 在 Python 中这会是： `a if a > b else b`
+记住在 Rust 中：
+- if 判别式不需要被圆括号包含
+- `if`/`else` 是表达式
+- 每个判别式后跟一个 `{}` 块"""
 
 [[exercises]]
 name = "if2"
