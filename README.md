@@ -7,7 +7,9 @@ _...寻找老版本的基于web的 Rustlings 版本？ 试试 [这里](https://g
 或者，对于第一次学习 Rust 的人，这里还有一些其它的资源：
 
 - [Rust 程序设计语言](https://doc.rust-lang.org/book/index.html) - 学习 Rust 最全面的资源，但有时有点偏理论性。你将和 Rustlings 一起使用它。
+- [Rust 程序设计语言（中文版）](https://rustwiki.org/zh-CN/book/) - 学习 Rust 最全面的资源，但有时有点偏理论性。你将和 Rustlings 一起使用它。
 - [通过例子学 Rust](https://doc.rust-lang.org/rust-by-example/index.html) - 通过解决小练习来学习 Rust！ 这很像 `rustlings`，但是它是在线的。
+- [通过例子学 Rust（中文版）](https://rustwiki.org/zh-CN/rust-by-example/) - 通过解决小练习来学习 Rust！ 这很像 `rustlings`，但是它是在线的。
 
 ## 开始
 
