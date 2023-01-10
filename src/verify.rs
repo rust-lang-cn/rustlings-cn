@@ -50,7 +50,7 @@ pub fn test(exercise: &Exercise, verbose: bool) -> Result<(), ()> {
 // Invoke the rust compiler without running the resulting binary
 fn compile_only(exercise: &Exercise) -> Result<bool, ()> {
     let progress_bar = ProgressBar::new_spinner();
-    progress_bar.set_message(format!("Compiling {exercise}..."));
+    progress_bar.set_message(format!("正在编译 {exercise}..."));
     progress_bar.enable_steady_tick(100);
 
     let _ = compile(exercise, &progress_bar)?;
@@ -62,19 +62,19 @@ fn compile_only(exercise: &Exercise) -> Result<bool, ()> {
 // Compile the given Exercise and run the resulting binary in an interactive mode
 fn compile_and_run_interactively(exercise: &Exercise) -> Result<bool, ()> {
     let progress_bar = ProgressBar::new_spinner();
-    progress_bar.set_message(format!("Compiling {exercise}..."));
+    progress_bar.set_message(format!("正在编译 {exercise}..."));
     progress_bar.enable_steady_tick(100);
 
     let compilation = compile(exercise, &progress_bar)?;
 
-    progress_bar.set_message(format!("Running {exercise}..."));
+    progress_bar.set_message(format!("正在运行 {exercise}..."));
     let result = compilation.run();
     progress_bar.finish_and_clear();
 
     let output = match result {
         Ok(output) => output,
         Err(output) => {
-            warn!("Ran {} with errors", exercise);
+            warn!("运行 {} 时发生错误", exercise);
             println!("{}", output.stdout);
             println!("{}", output.stderr);
             return Err(());
@@ -88,7 +88,7 @@ fn compile_and_run_interactively(exercise: &Exercise) -> Result<bool, ()> {
 // the output if verbose is set to true
 fn compile_and_test(exercise: &Exercise, run_mode: RunMode, verbose: bool) -> Result<bool, ()> {
     let progress_bar = ProgressBar::new_spinner();
-    progress_bar.set_message(format!("Testing {exercise}..."));
+    progress_bar.set_message(format!("正在测试 {exercise}..."));
     progress_bar.enable_steady_tick(100);
 
     let compilation = compile(exercise, &progress_bar)?;
@@ -108,7 +108,7 @@ fn compile_and_test(exercise: &Exercise, run_mode: RunMode, verbose: bool) -> Re
         }
         Err(output) => {
             warn!(
-                "Testing of {} failed! Please try again. Here's the output:",
+                "测试 {} 失败！请重试。输出如下：",
                 exercise
             );
             println!("{}", output.stdout);
@@ -130,7 +130,7 @@ fn compile<'a, 'b>(
         Err(output) => {
             progress_bar.finish_and_clear();
             warn!(
-                "Compiling of {} failed! Please try again. Here's the output:",
+                "编译 {} 失败！请重试。输出如下：",
                 exercise
             );
             println!("{}", output.stderr);
