@@ -2,8 +2,6 @@
 // 填写代码行的缺失部分
 // 没有提示，没有技巧，只要习惯键入这些 :)
 
-// I AM NOT DONE
-
 fn main() {
     // Characters (`char`)
 
@@ -18,7 +16,7 @@ fn main() {
         println!("这不是字母也不是数字！");
     }
 
-    let // 参照示例完成此行！这是你最喜欢的字符吗？
+    let your_character = '😀';// 参照示例完成此行！这是你最喜欢的字符吗？
     // 试一下字母，试一下数字，试一下特殊字符，试一下
     // 你的语言之外其它语言的特殊字符，试一下 emoji ！
     if your_character.is_alphabetic() {
