@@ -1,15 +1,15 @@
 # Vectors
 
-Vectors are one of the most-used Rust data structures. In other programming
-languages, they'd simply be called Arrays, but since Rust operates on a
-bit of a lower level, an array in Rust is stored on the stack (meaning it
-can't grow or shrink, and the size needs to be known at compile time),
-and a Vector is stored in the heap (where these restrictions do not apply).
+Vectors 是 Rust 中最常用的数据结构之一。在别的编程语言中，
+它们简单地被称为数组，但是由于 Rust 在比较底层的位置，
+Rust 的数组是存在于栈中的（这意味着它不能伸缩，并且
+需要在编译时知道其大小），而 Vector 是存储于堆中的（
+在这里就没有这些限制了）。
 
-Vectors are a bit of a later chapter in the book, but we think that they're
-useful enough to talk about them a bit earlier. We shall be talking about
-the other useful data structure, hash maps, later.
+Vectors 在课本的稍后章节，但是我们认为提前了解它们是
+非常有用的。我们稍后将谈论另一个有用的数据结构，hash maps。
 
-## Further information
+## 更多信息
 
-- [Storing Lists of Values with Vectors](https://doc.rust-lang.org/stable/book/ch08-01-vectors.html)
+- [使用 Vectors 来存储一系列值](https://doc.rust-lang.org/stable/book/ch08-01-vectors.html)
+- [使用 Vectors 来存储一系列值（中文版，译者注）](https://rustwiki.org/zh-CN/book/ch08-01-vectors.html)
