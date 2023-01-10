@@ -1,6 +1,6 @@
 // primitive_types1.rs
-// Fill in the rest of the line that has code missing!
-// No hints, there's no tricks, just get used to typing these :)
+// 填写代码行的缺失部分
+// 没有提示，没有技巧，只要习惯键入这些 :)
 
 // I AM NOT DONE
 
@@ -12,7 +12,7 @@ fn main() {
         println!("Good morning!");
     }
 
-    let // Finish the rest of this line like the example! Or make it be false!
+    let // 像示例一样完成这行！或者将其设为 false ！
     if is_evening {
         println!("Good evening!");
     }
