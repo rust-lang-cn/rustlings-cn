@@ -197,14 +197,13 @@ name = "primitive_types4"
 path = "exercises/primitive_types/primitive_types4.rs"
 mode = "test"
 hint = """
-Take a look at the Understanding Ownership -> Slices -> Other Slices section of the book:
+通过阅读以下文章来认识 所有权 -> 切片 -> 其它切片
 https://doc.rust-lang.org/book/ch04-03-slices.html
-and use the starting and ending indices of the items in the Array
-that you want to end up in the slice.
+https://rustwiki.org/zh-CN/book/ch04-03-slices.html（中文版，译者注）
+并且使用你想要的起始和结束索引获取数组切片。
 
-If you're curious why the first argument of `assert_eq!` does not
-have an ampersand for a reference since the second argument is a
-reference, take a look at the coercion chapter of the nomicon:
+如果你很好奇为什么 `assert_eq!` 第二个参数是一个引用但是第一个参数不需要加上 & 号来作为引用
+的话，阅读以下关于强制转换的文档：
 https://doc.rust-lang.org/nomicon/coercions.html"""
 
 [[exercises]]
