@@ -4,13 +4,13 @@
 // 第二步： 使 bar_for_fuzz 和 default_to_baz 可以测试通过！
 // 执行 `rustlings hint if2` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
+    } else if fizzish == "fuzz" {
+        "bar"
     } else {
-        1
+        "baz"
     }
 }
 
