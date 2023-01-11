@@ -303,15 +303,14 @@ name = "move_semantics4"
 path = "exercises/move_semantics/move_semantics4.rs"
 mode = "compile"
 hint = """
-Stop reading whenever you feel like you have enough direction :) Or try
-doing one step and then fixing the compiler errors that result!
-So the end goal is to:
-   - get rid of the first line in main that creates the new vector
-   - so then `vec0` doesn't exist, so we can't pass it to `fill_vec`
-   - we don't want to pass anything to `fill_vec`, so its signature should
-     reflect that it does not take any arguments
-   - since we're not creating a new vec in `main` anymore, we need to create
-     a new vec in `fill_vec`, similarly to the way we did in `main`"""
+停止阅读一旦你觉得你有足够的方向了 :) 或者尝试
+执行一个步骤然后修复其导致的编译器错误！
+所以最终目标是：
+   - 去掉 main 函数中创建一个新的 vector 的第一行
+   - 然后 `vec0` 就不存在了，所以我们不能将其传入 `fill_vec` 中
+   - 我们不想往 `fill_vec` 中传入任何东西，所以它的签名需要反映它不需要传入任何参数
+   - 因为我们不再在 `main` 中创建一个新的 vec，我们需要在 `fill_vec` 中创建
+     一个新的 vec，就像我们在 `main` 中做的那样"""
 
 [[exercises]]
 name = "move_semantics5"
