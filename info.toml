@@ -276,21 +276,18 @@ name = "move_semantics2"
 path = "exercises/move_semantics/move_semantics2.rs"
 mode = "compile"
 hint = """
-So, `vec0` is passed into the `fill_vec` function as an argument. In Rust,
-when an argument is passed to a function and it's not explicitly returned,
-you can't use the original variable anymore. We call this "moving" a variable.
-Variables that are moved into a function (or block scope) and aren't explicitly
-returned get "dropped" at the end of that function. This is also what happens here.
-There's a few ways to fix this, try them all if you want:
-1. Make another, separate version of the data that's in `vec0` and pass that
-   to `fill_vec` instead.
-2. Make `fill_vec` borrow its argument instead of taking ownership of it,
-   and then copy the data within the function in order to return an owned
-   `Vec<i32>`
-3. Make `fill_vec` *mutably* borrow a reference to its argument (which will need to be
-   mutable), modify it directly, then not return anything. Then you can get rid
-   of `vec1` entirely -- note that this will change what gets printed by the
-   first `println!`"""
+那么，`vec0` 作为一个参数传入了 `fill_vec` 函数。在 Rust 中，
+当一个参数被传入一个函数且没有被明确地返回时，
+你再也不能使用原始变量。我们把这叫做 "moving(移动)" 一个变量。
+被移动到函数（或块域）并且没有被明确返回的变量会在函数的末尾
+被 "dropped"。这里发生的也是这样的事情。
+有几种方法可以修复它，如果你想的话可以试一下：
+1. 制作另一个包含 `vec0` 中的数据的版本并将其传入到 `fill_vec`。
+2. 使 `fill_vec` 借用它的参数而不是获取其所有权，
+   然后在函数中复制它的数据以返回一个自己的 `Vec<i32>`
+3. 使 `fill_vec` *可变地* 借用它参数的一个引用（这个参数也需要是可变的），
+   直接修改它，然后不要返回任何东西。这样你就可以完全摆脱 `vec1` 了 -- 注意
+   这将会改变第一个 `println!` 的打印结果"""
 
 [[exercises]]
 name = "move_semantics3"
