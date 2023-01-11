@@ -1,6 +1,6 @@
 // move_semantics3.rs
-// Make me compile without adding new lines-- just changing existing lines!
-// (no lines with multiple semicolons necessary!)
+// 不添加新行使我可以编译 -- 只更改已存在的行！
+// （也不需要在行中使用多个分号！）
 // 执行 `rustlings hint move_semantics3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 fn main() {
