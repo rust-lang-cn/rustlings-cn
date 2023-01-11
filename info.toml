@@ -347,13 +347,15 @@ name = "structs1"
 path = "exercises/structs/structs1.rs"
 mode = "test"
 hint = """
-Rust has more than one type of struct. Three actually, all variants are used to package related data together.
-There are normal (or classic) structs. These are named collections of related data stored in fields.
-Tuple structs are basically just named tuples.
-Finally, Unit-like structs. These don't have any fields and are useful for generics.
+Rust 不止一种结构体。事实上，三种，所有类型都是用来将有关联的数据包裹在一起。
+这里有普通的（或经典的）结构体。这些是存储在相应字段的数据的集合。
+元组结构体基本上就叫做元组。
+最后是类单元结构体。它们没有字段，在泛型上很有用。
 
-In this exercise you need to complete and implement one of each kind.
-Read more about structs in The Book: https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
+在这个练习中你需要完成并实现其中一种类型。
+在书本中阅读更多关于结构体的内容：
+https://doc.rust-lang.org/book/ch05-01-defining-structs.html
+https://rustwiki.org/zh-CN/book/ch05-00-structs.html（中文版，译者注）"""
 
 [[exercises]]
 name = "structs2"
