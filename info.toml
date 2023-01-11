@@ -317,11 +317,11 @@ name = "move_semantics5"
 path = "exercises/move_semantics/move_semantics5.rs"
 mode = "compile"
 hint = """
-Carefully reason about the range in which each mutable reference is in
-scope. Does it help to update the value of referent (x) immediately after
-the mutable reference is taken? Read more about 'Mutable References'
-in the book's section References and Borrowing':
+仔细分析关于每个可变引用在作用域中的范围。
+在获取可变引用之后，直接改变 (x) 的值是否有帮助？
+在书本的 引用和借用 章节的 “可变引用” 阅读更多关于 “可变引用” 的内容：
 https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#mutable-references.
+https://rustwiki.org/zh-CN/book/ch04-02-references-and-borrowing.html#%E5%8F%AF%E5%8F%98%E5%BC%95%E7%94%A8（中文版，译者注）
 """
 
 [[exercises]]
