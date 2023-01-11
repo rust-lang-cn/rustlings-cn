@@ -1,6 +1,6 @@
 // move_semantics6.rs
 // 执行 `rustlings hint move_semantics6` 或在观察模式下使用 `hint` 子命令来获取提示。
-// You can't change anything except adding or removing references.
+// 除了添加或删除引用之外你不能改变任何东西。
 
 // I AM NOT DONE
 
@@ -12,12 +12,12 @@ fn main() {
     string_uppercase(&data);
 }
 
-// Should not take ownership
+// 应该不获取所有权
 fn get_char(data: String) -> char {
     data.chars().last().unwrap()
 }
 
-// Should take ownership
+// 应该获取所有权
 fn string_uppercase(mut data: &String) {
     data = &data.to_uppercase();
 
