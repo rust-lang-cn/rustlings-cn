@@ -362,9 +362,10 @@ name = "structs2"
 path = "exercises/structs/structs2.rs"
 mode = "test"
 hint = """
-Creating instances of structs is easy, all you need to do is assign some values to its fields.
-There are however some shortcuts that can be taken when instantiating structs.
-Have a look in The Book, to find out more: https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax"""
+创建一个结构体示例是非常简单的，你所需要做的就是给它的字段赋值。
+不过也有一些实例化结构体的捷径。
+看一下书本，并发现更多：https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax
+https://rustwiki.org/zh-CN/book/ch05-01-defining-structs.html#%E4%BD%BF%E7%94%A8%E7%BB%93%E6%9E%84%E4%BD%93%E6%9B%B4%E6%96%B0%E8%AF%AD%E6%B3%95%E4%BB%8E%E5%85%B6%E4%BB%96%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E5%AE%9E%E4%BE%8B（中文版，译者注）"""
 
 [[exercises]]
 name = "structs3"

@@ -1,5 +1,5 @@
 // structs2.rs
-// Address all the TODOs to make the tests pass!
+// 解决所有的 TODOs 以让测试通过！
 // 执行 `rustlings hint structs2` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
@@ -34,7 +34,7 @@ mod tests {
     #[test]
     fn your_order() {
         let order_template = create_order_template();
-        // TODO: Create your own order using the update syntax and template above!
+        // TODO: 使用更新语法和上面的模板来创建你自己的订单！
         // let your_order =
         assert_eq!(your_order.name, "Hacker in Rust");
         assert_eq!(your_order.year, order_template.year);
