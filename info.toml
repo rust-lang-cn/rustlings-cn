@@ -265,11 +265,11 @@ name = "move_semantics1"
 path = "exercises/move_semantics/move_semantics1.rs"
 mode = "compile"
 hint = """
-So you've got the "cannot borrow immutable local variable `vec1` as mutable" error on line 13,
-right? The fix for this is going to be adding one keyword, and the addition is NOT on line 13
-where the error is.
+所以你在第13行获得了错误 "cannot borrow immutable local variable `vec1` as mutable"
+（无法借用不可变本地变量 `vec1` 为可变的），对吗？
+修复方法是添加一个关键字，不过不是添加到出现错误的第13行。
 
-Also: Try accessing `vec0` after having called `fill_vec()`. See what happens!"""
+另外：尝试在调用 `fill_vec()` 之后访问 `vec0`，看看会发生什么！"""
 
 [[exercises]]
 name = "move_semantics2"
