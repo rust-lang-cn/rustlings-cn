@@ -1,12 +1,10 @@
 // move_semantics1.rs
 // 执行 `rustlings hint move_semantics1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 fn main() {
     let vec0 = Vec::new();
 
-    let vec1 = fill_vec(vec0);
+    let mut vec1 = fill_vec(vec0);
 
     println!("{} has length {} content `{:?}`", "vec1", vec1.len(), vec1);
 
