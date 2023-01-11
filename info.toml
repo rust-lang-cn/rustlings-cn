@@ -372,11 +372,12 @@ name = "structs3"
 path = "exercises/structs/structs3.rs"
 mode = "test"
 hint = """
-For is_international: What makes a package international? Seems related to the places it goes through right?
+对于 is_international：是什么让一个包裹国际化？看起来与它去的地方有关系对吗？
 
-For get_fees: This method takes an additional argument, is there a field in the Package struct that this relates to?
+对于 get_fees：这个方法传入一个额外参数，Package 结构体中有一个与它有关系的字段吗？
 
-Have a look in The Book, to find out more about method implementations: https://doc.rust-lang.org/book/ch05-03-method-syntax.html"""
+看一下书本来找到更多关于方法实现的内容：https://doc.rust-lang.org/book/ch05-03-method-syntax.html
+https://rustwiki.org/zh-CN/book/ch05-03-method-syntax.html（中文版，译者注）"""
 
 # ENUMS
 

@@ -1,7 +1,7 @@
 // structs3.rs
-// Structs contain data, but can also have logic. In this exercise we have
-// defined the Package struct and we want to test some logic attached to it.
-// Make the code compile and the tests pass!
+// 结构体包含数据，不过也可以有逻辑。在这个练习中我们定义了
+// Package（包裹） 结构体并且我们想要测试一些它附加的逻辑。
+// 使代码可以编译并通过测试！
 // 执行 `rustlings hint structs3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
@@ -27,11 +27,11 @@ impl Package {
     }
 
     fn is_international(&self) -> ??? {
-        // Something goes here...
+        // 这边有东西...
     }
 
     fn get_fees(&self, cents_per_gram: i32) -> ??? {
-        // Something goes here...
+        // 这边有东西...
     }
 }
 
