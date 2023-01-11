@@ -294,10 +294,9 @@ name = "move_semantics3"
 path = "exercises/move_semantics/move_semantics3.rs"
 mode = "compile"
 hint = """
-The difference between this one and the previous ones is that the first line
-of `fn fill_vec` that had `let mut vec = vec;` is no longer there. You can,
-instead of adding that line back, add `mut` in one place that will change
-an existing binding to be a mutable binding instead of an immutable one :)"""
+这一个练习和上一个的区别是 `fn fill_vec` 的第一行现在没有 `let mut vec = vec;` 了。
+你可以，不要添加回那一行，而是在某个地方添加 `mut` 来改变一个已有的绑定，
+将其由不可变改为可变绑定 :)"""
 
 [[exercises]]
 name = "move_semantics4"
