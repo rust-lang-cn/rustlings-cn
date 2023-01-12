@@ -1,10 +1,14 @@
-# Enums
+# 枚举
 
-Rust allows you to define types called "enums" which enumerate possible values.
-Enums are a feature in many languages, but their capabilities differ in each language. Rust’s enums are most similar to algebraic data types in functional languages, such as F#, OCaml, and Haskell.
-Useful in combination with enums is Rust's "pattern matching" facility, which makes it easy to run different code for different values of an enumeration.
+Rust 允许你定义叫做 "枚举" 的用于列举所有可能的值的类型。
+枚举是很多语言的特色，但是它们的能力在每种语言中不一致。
+Rust 的枚举很像函数式语言，比如 F#, OCaml 和 Haskell 的代数数据类型，
+枚举配合 Rust 的“模式匹配”设计会更好用，使得基于不同的枚举值运行不同的代码变得更简单。
 
-## Further information
 
-- [Enums](https://doc.rust-lang.org/book/ch06-00-enums.html)
-- [Pattern syntax](https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html)
+## 更多信息
+
+- [枚举](https://doc.rust-lang.org/book/ch06-00-enums.html)
+- [枚举（中文版，译者注）](https://rustwiki.org/zh-CN/book/ch06-00-enums.html)
+- [模式语法](https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html)
+- [模式语法（中文版，译者注）](https://rustwiki.org/zh-CN/book/ch18-03-pattern-syntax.html)
