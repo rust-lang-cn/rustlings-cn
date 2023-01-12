@@ -1,11 +1,11 @@
 // enums3.rs
-// Address all the TODOs to make the tests pass!
+// 解决所有的 TODOs 以让测试通过！
 // 执行 `rustlings hint enums3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
 
 enum Message {
-    // TODO: implement the message variant types based on their usage below
+    // TODO: 根据它们的用法，实现信息的变量类型
 }
 
 struct Point {
@@ -37,8 +37,8 @@ impl State {
     }
 
     fn process(&mut self, message: Message) {
-        // TODO: create a match expression to process the different message variants
-        // Remember: When passing a tuple as a function argument, you'll need extra parentheses: fn function((t, u, p, l, e))
+        // TODO: 创建一个匹配表达式来处理不同的消息类型
+        // 记住：将元组作为函数参数时，需要额外的括号：fn function((t, u, p, l, e))
     }
 }
 
