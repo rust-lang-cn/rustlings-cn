@@ -392,8 +392,7 @@ name = "enums2"
 path = "exercises/enums/enums2.rs"
 mode = "compile"
 hint = """
-You can create enumerations that have different variants with different types
-such as no data, anonymous structs, a single string, tuples, ...etc"""
+你可以创建拥有不同类型的不同值的枚举，比如说无数据、匿名结构、一个字符串、元组，等等"""
 
 [[exercises]]
 name = "enums3"
@@ -1080,7 +1079,7 @@ hint = """
 name = "clippy3"
 path = "exercises/clippy/clippy3.rs"
 mode = "clippy"
-hint = "No hints this time!"
+hint = "这次没有提示！"
 
 # TYPE CONVERSIONS
 

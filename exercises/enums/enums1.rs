@@ -1,11 +1,11 @@
 // enums1.rs
-// No hints this time! ;)
+// 这次没有提示！ ;)
 
 // I AM NOT DONE
 
 #[derive(Debug)]
 enum Message {
-    // TODO: define a few types of messages as used below
+    // TODO: 定义下面所用的消息类型
 }
 
 fn main() {
