@@ -428,11 +428,11 @@ name = "strings3"
 path = "exercises/strings/strings3.rs"
 mode = "test"
 hint = """
-There's tons of useful standard library functions for strings. Let's try and use some of
-them: <https://doc.rust-lang.org/std/string/struct.String.html#method.trim>!
+有成吨的关于字符串的标准库函数。
+让我们试一下吧：<https://doc.rust-lang.org/std/string/struct.String.html#method.trim>！
 
-For the compose_me method: You can either use the `format!` macro, or convert the string
-slice into an owned string, which you can then freely extend."""
+对于 compose_me 方法：你可以使用 `format!` 宏，或者将一个字符串切片转换为原始字符串，
+这样你就可以自由扩展它了。"""
 
 [[exercises]]
 name = "strings4"
