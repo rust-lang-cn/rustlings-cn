@@ -5,7 +5,7 @@
 
 #[derive(Debug)]
 enum Message {
-    // TODO: define the different variants used below
+    // TODO: 定义下面所用的消息类型
 }
 
 impl Message {
