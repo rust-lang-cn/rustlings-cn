@@ -399,10 +399,9 @@ name = "enums3"
 path = "exercises/enums/enums3.rs"
 mode = "test"
 hint = """
-As a first step, you can define enums to compile this code without errors.
-and then create a match expression in `process()`.
-Note that you need to deconstruct some message variants
-in the match expression to get value in the variant."""
+第一步，你可以添加枚举以使代码可以无错误编译。
+然后在 `process()` 中创建一个匹配表达式。
+注意有些消息变量你需要在匹配表达式中进行结构，以得到变量中的值。"""
 
 # STRINGS
 
@@ -411,21 +410,18 @@ name = "strings1"
 path = "exercises/strings/strings1.rs"
 mode = "compile"
 hint = """
-The `current_favorite_color` function is currently returning a string slice with the `'static`
-lifetime. We know this because the data of the string lives in our code itself -- it doesn't
-come from a file or user input or another program -- so it will live as long as our program
-lives. But it is still a string slice. There's one way to create a `String` by converting a
-string slice covered in the Strings chapter of the book, and another way that uses the `From`
-trait."""
+`current_favorite_color` 函数现在返回了一个字符串切片，这个切片的声明周期为 `'static`。
+我们知道这一点是因为字符串存在于我们的代码本省 -- 它不来自于文件或用户输入或其它程序 -- 所以
+它将随着我们的程序存在。但是它仍然使一个字符串切片。有个通过转换字符串切片来创建一个 `String` 的方法，
+它在书本的 字符串 章节，还有一个方法是使用 `From` trait。"""
 
 [[exercises]]
 name = "strings2"
 path = "exercises/strings/strings2.rs"
 mode = "compile"
 hint = """
-Yes, it would be really easy to fix this by just changing the value bound to `word` to be a
-string slice instead of a `String`, wouldn't it?? There is a way to add one character to line
-9, though, that will coerce the `String` into a string slice."""
+是的，有个很容易修复这个 bug 的方法，那就是改变 `word` 绑定的值为一个字符串切片而不是一个 `String`， 不是吗？
+不过也有另一个方法，那就是在第 9 行添加一个字符，这会强制转换 `String` 为一个字符串切片。"""
 
 [[exercises]]
 name = "strings3"
