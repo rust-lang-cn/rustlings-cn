@@ -399,10 +399,9 @@ name = "enums3"
 path = "exercises/enums/enums3.rs"
 mode = "test"
 hint = """
-As a first step, you can define enums to compile this code without errors.
-and then create a match expression in `process()`.
-Note that you need to deconstruct some message variants
-in the match expression to get value in the variant."""
+第一步，你可以添加枚举以使代码可以无错误编译。
+然后在 `process()` 中创建一个匹配表达式。
+注意有些消息变量你需要在匹配表达式中进行结构，以得到变量中的值。"""
 
 # STRINGS
 
