@@ -1,9 +1,9 @@
 // strings4.rs
 
-// Ok, here are a bunch of values-- some are `String`s, some are `&str`s. Your
-// task is to call one of these two functions on each value depending on what
-// you think each value is. That is, add either `string_slice` or `string`
-// before the parentheses on each line. If you're right, it will compile!
+// 好的，这里有一串值 -- 一些是 `String`，一些是 `&str`。
+// 你的任务将使用值来调用两个函数中的某一个，基于你认为这个值是什么。
+// 也就是，添加 `string_slice` 或者 `string` 到每行的括号前。
+// 如果你对了，它将可以编译！
 // 这次没有提示！
 
 // I AM NOT DONE
