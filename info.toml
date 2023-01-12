@@ -420,9 +420,8 @@ name = "strings2"
 path = "exercises/strings/strings2.rs"
 mode = "compile"
 hint = """
-Yes, it would be really easy to fix this by just changing the value bound to `word` to be a
-string slice instead of a `String`, wouldn't it?? There is a way to add one character to line
-9, though, that will coerce the `String` into a string slice."""
+是的，有个很容易修复这个 bug 的方法，那就是改变 `word` 绑定的值为一个字符串切片而不是一个 `String`， 不是吗？
+不过也有另一个方法，那就是在第 9 行添加一个字符，这会强制转换 `String` 为一个字符串切片。"""
 
 [[exercises]]
 name = "strings3"
