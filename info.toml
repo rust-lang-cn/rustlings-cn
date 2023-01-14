@@ -455,10 +455,9 @@ name = "modules2"
 path = "exercises/modules/modules2.rs"
 mode = "compile"
 hint = """
-The delicious_snacks module is trying to present an external interface that is
-different than its internal structure (the `fruits` and `veggies` modules and
-associated constants). Complete the `use` statements to fit the uses in main and
-find the one keyword missing for both constants."""
+delicious_snacks 模块正在试图对外呈现一个接口，其不同于
+它的内部结构（`fruits` 和 `veggies` 模块以及相关常量）。完成 `use` 语句
+以修复 main 中的调用并找到两个常量都缺失的一个关键字。"""
 
 [[exercises]]
 name = "modules3"
