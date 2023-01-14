@@ -483,8 +483,9 @@ name = "hashmaps2"
 path = "exercises/hashmaps/hashmaps2.rs"
 mode = "test"
 hint = """
-Use the `entry()` and `or_insert()` methods of `HashMap` to achieve this.
-Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
+使用哈希表的 `entry()` 和 `or_insert()` 方法来完成这个练习。
+了解更多：https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch08-03-hash-maps.html#%E5%8F%AA%E5%9C%A8%E9%94%AE%E6%B2%A1%E6%9C%89%E5%AF%B9%E5%BA%94%E5%80%BC%E6%97%B6%E6%8F%92%E5%85%A5
 """
 
 [[exercises]]
