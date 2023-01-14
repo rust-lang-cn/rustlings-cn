@@ -447,9 +447,8 @@ name = "modules1"
 path = "exercises/modules/modules1.rs"
 mode = "compile"
 hint = """
-Everything is private in Rust by default-- but there's a keyword we can use
-to make something public! The compiler error should point to the thing that
-needs to be public."""
+Rust 中所有东西默认都是私有(private)的 -- 但是我们可以通过一个参数使一些变为公共的(public)！
+编译器的错误应该指向了一个需要变为公共的(public)东西。"""
 
 [[exercises]]
 name = "modules2"
