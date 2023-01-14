@@ -493,10 +493,10 @@ name = "hashmaps3"
 path = "exercises/hashmaps/hashmaps3.rs"
 mode = "test"
 hint = """
-Hint 1: Use the `entry()` and `or_insert()` methods of `HashMap` to insert entries corresponding to each team in the scores table.
-Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
-Hint 2: If there is already an entry for a given key, the value returned by `entry()` can be updated based on the existing value.
-Learn more at https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
+提示1：使用哈希表的 `entry()` 和 `or_insert()` 方法在得分表中插入与每个团队对应的条目。
+提示2：如果给定键已经有了一个条目，则 `entry()` 返回的值可以基于已存在的值进行更新。
+了解更多：https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch08-03-hash-maps.html#%E6%A0%B9%E6%8D%AE%E6%97%A7%E5%80%BC%E6%9B%B4%E6%96%B0%E4%B8%80%E4%B8%AA%E5%80%BC
 """
 
 # QUIZ 2
