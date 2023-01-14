@@ -3,12 +3,10 @@
 // 修复这些 'use' 语句使代码可以编译。
 // 执行 `rustlings hint modules2` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 mod delicious_snacks {
     // TODO: 修复这些 use 语句
-    use self::fruits::PEAR as ???
-    use self::veggies::CUCUMBER as ???
+    pub use self::fruits::PEAR as fruit;
+    pub use self::veggies::CUCUMBER as veggie;
 
     mod fruits {
         pub const PEAR: &'static str = "Pear";
