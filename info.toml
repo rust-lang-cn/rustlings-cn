@@ -464,9 +464,8 @@ name = "modules3"
 path = "exercises/modules/modules3.rs"
 mode = "compile"
 hint = """
-UNIX_EPOCH and SystemTime are declared in the std::time module. Add a use statement
-for these two to bring them into scope. You can use nested paths or the glob
-operator to bring these two in using only one line."""
+UNIX_EPOCH 和 SystemTime 被声明于 std::time 模块。使用一个 use 语句以将
+这俩引入作用域。你可以使用嵌套路径或者 glob 运算符，这样就可以只用一行就将它们都引入。"""
 
 # HASHMAPS
 
