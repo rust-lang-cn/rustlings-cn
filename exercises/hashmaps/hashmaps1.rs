@@ -6,17 +6,17 @@
 //
 // 执行 `rustlings hint hashmaps1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 use std::collections::HashMap;
 
 fn fruit_basket() -> HashMap<String, u32> {
-    let mut basket = // TODO: 在这里声明你的哈希表。
+    let mut basket = HashMap::new(); // TODO: 在这里声明你的哈希表。
 
     // 已经给你两根香蕉了 :)
     basket.insert(String::from("banana"), 2);
 
     // TODO: 在这里将更多水果放入你的篮子中。
+    basket.insert(String::from("apple"), 2);
+    basket.insert(String::from("mango"), 2);
 
     basket
 }
