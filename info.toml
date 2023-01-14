@@ -474,10 +474,8 @@ name = "hashmaps1"
 path = "exercises/hashmaps/hashmaps1.rs"
 mode = "test"
 hint = """
-Hint 1: Take a look at the return type of the function to figure out
-  the type for the `basket`.
-Hint 2: Number of fruits should be at least 5. And you have to put
-  at least three different types of fruits.
+提示1：看一下函数的返回值类型并推导出 `basket` 的类型。
+提示2：水果的个数应至少为5。并且你必须放入至少三种水果。
 """
 
 [[exercises]]
