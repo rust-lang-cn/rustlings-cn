@@ -523,13 +523,13 @@ name = "options2"
 path = "exercises/options/options2.rs"
 mode = "test"
 hint = """
-check out:
+了解清楚：
 https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html
 https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html
 
-Remember that Options can be stacked in if let and while let.
-For example: Some(Some(variable)) = variable2
-Also see Option::flatten
+请记住，Option 可以被堆叠在 if let 和 while let 中。
+比如： Some(Some(variable)) = variable2
+另请参见 Option::flatten
 """
 
 [[exercises]]
