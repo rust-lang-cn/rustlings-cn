@@ -514,9 +514,9 @@ name = "options1"
 path = "exercises/options/options1.rs"
 mode = "test"
 hint = """
-Options can have a Some value, with an inner value, or a None value, without an inner value.
-There's multiple ways to get at the inner value, you can use unwrap, or pattern match. Unwrapping
-is the easiest, but how do you do it safely so that it doesn't panic in your face later?"""
+Option 可以有一个含内部值的 Some 值，或者一个不含内部值的 None。
+有很多方法可以获取内部值，你可以使用 unwrap，或模式匹配。
+Unwrap 是最简单的，但是你要怎么安全地使用它以避免它以后在你面前发生 panic？"""
 
 [[exercises]]
 name = "options2"
