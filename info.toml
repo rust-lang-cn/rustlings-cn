@@ -537,10 +537,9 @@ name = "options3"
 path = "exercises/options/options3.rs"
 mode = "compile"
 hint = """
-The compiler says a partial move happened in the `match`
-statement. How can this be avoided? The compiler shows the correction
-needed. After making the correction as suggested by the compiler, do
-read: https://doc.rust-lang.org/std/keyword.ref.html"""
+编译器说一个部分转移发生在 `match` 语句中。怎样能够避免？
+编译器展示了需要的修正。按照编译器的建议进行更正后，
+阅读：https://doc.rust-lang.org/std/keyword.ref.html"""
 
 # ERROR HANDLING
 
