@@ -583,9 +583,8 @@ name = "errors4"
 path = "exercises/error_handling/errors4.rs"
 mode = "test"
 hint = """
-`PositiveNonzeroInteger::new` is always creating a new instance and returning an `Ok` result.
-It should be doing some checking, returning an `Err` result if those checks fail, and only
-returning an `Ok` result if those checks determine that everything is... okay :)"""
+`PositiveNonzeroInteger::new` 总是创建一个新示例并返回一个 `Ok` 作为结果。
+它应该做些检查，如果检查失败的话就返回 `Err`，并只有在那些检查判断所有事情都没问题时返回 `Ok` :)"""
 
 [[exercises]]
 name = "errors5"
