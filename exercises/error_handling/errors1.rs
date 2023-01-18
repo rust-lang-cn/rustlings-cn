@@ -4,14 +4,12 @@
 // 幸好，Rust 有一个类似 `Option` 的结构用来解释错误情况。让我们使用它！
 // 执行 `rustlings hint errors1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
-pub fn generate_nametag_text(name: String) -> Option<String> {
+pub fn generate_nametag_text(name: String) -> Result<String, String> {
     if name.is_empty() {
         // 不允许空名字。
-        None
+        Err("`name` was empty; it must be nonempty.".to_string())
     } else {
-        Some(format!("Hi! My name is {}", name))
+        Ok(format!("Hi! My name is {}", name))
     }
 }
 
