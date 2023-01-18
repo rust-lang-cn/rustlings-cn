@@ -616,19 +616,15 @@ name = "errors6"
 path = "exercises/error_handling/errors6.rs"
 mode = "test"
 hint = """
-This exercise uses a completed version of `PositiveNonzeroInteger` from
-errors4.
+这个练习使用了来自 errors4 的 `PositiveNonzeroInteger` 的完成版本。
 
-Below the line that TODO asks you to change, there is an example of using
-the `map_err()` method on a `Result` to transform one type of error into
-another. Try using something similar on the `Result` from `parse()`. You
-might use the `?` operator to return early from the function, or you might
-use a `match` expression, or maybe there's another way!
+在教你做事的 TODO 行下面，有一个在 `Result` 上使用 `map_err()` 方法，将一种错误转换为另一种的例子。
+尝试使用类似的方法在来自 `parse()` 的 `Result` 上。你可能使用 `?` 操作符使函数提前返回，
+或者你可能使用一个 `match` 表达式，或者还有其它方法！
 
-You can create another function inside `impl ParsePosNonzeroError` to use
-with `map_err()`.
+你可以在 `impl ParsePosNonzeroError` 里创建另一个函数来使用 `map_err()`。
 
-Read more about `map_err()` in the `std::result` documentation:
+在 `std::result` 文档中阅读更多关于 `map_err()` 的内容：
 https://doc.rust-lang.org/std/result/enum.Result.html#method.map_err"""
 
 # Generics
