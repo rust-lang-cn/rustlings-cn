@@ -591,22 +591,24 @@ name = "errors5"
 path = "exercises/error_handling/errors5.rs"
 mode = "compile"
 hint = """
-There are two different possible `Result` types produced within `main()`, which are
-propagated using `?` operators. How do we declare a return type from `main()` that allows both?
+`main()` 有可能产生两种不同的 `Result` 类型，它们通过 `?` 操作符传播。
+我们怎样声明 `main()` 的返回值类型以允许它们？
 
-Under the hood, the `?` operator calls `From::from` on the error value to convert it to a boxed
-trait object, a `Box<dyn error::Error>`. This boxed trait object is polymorphic, and since all
-errors implement the `error::Error` trait, we can capture lots of different errors in one "Box"
-object.
+实际上，`?` 操作符调用在一个错误值上调用 `From::from` 以将其转换为一个实现了 boxed trait 的对象，
+即一个 `Box<dyn error::Error>`。这个实现了 boxed trait 的对象是多样的，由于所有的错误都实现了
+`error::Error` trait，我们可以用一个 "Box" 对象抓取多种类型的错误。
 
-Check out this section of the book:
+看一下书本的这个部分：
 https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch09-02-recoverable-errors-with-result.html#%E4%BC%A0%E6%92%AD%E9%94%99%E8%AF%AF%E7%9A%84%E7%AE%80%E5%86%99-%E8%BF%90%E7%AE%97%E7%AC%A6
 
-Read more about boxing errors:
+阅读跟多关于错误装箱的内容：
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html
+（中文版，译者注）https://rustwiki.org/zh-CN/rust-by-example/error/multiple_error_types/boxing_errors.html
 
-Read more about using the `?` operator with boxed errors:
+阅读更多关于使用 `?` 的内容：
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html
+（中文版，译者注）https://rustwiki.org/zh-CN/rust-by-example/error/multiple_error_types/reenter_question_mark.html
 """
 
 [[exercises]]
