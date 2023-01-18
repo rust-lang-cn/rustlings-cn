@@ -14,6 +14,6 @@ Some additional common Rust traits include:
 Because traits indicate shared behavior between data types, they are useful when writing generics.
 
 
-## Further information
+## 更多信息
 
 - [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)

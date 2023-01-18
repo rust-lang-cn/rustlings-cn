@@ -548,17 +548,13 @@ name = "errors1"
 path = "exercises/error_handling/errors1.rs"
 mode = "test"
 hint = """
-`Ok` and `Err` are one of the variants of `Result`, so what the tests are saying
-is that `generate_nametag_text` should return a `Result` instead of an
-`Option`.
+`Ok` 和 `Err` 是 `Result` 变量之一，然后测试说的是 `generate_nametag_text`
+应该返回一个 `Result` 而不是一个 `Option`。
 
-To make this change, you'll need to:
-   - update the return type in the function signature to be a Result<String, String> that
-     could be the variants `Ok(String)` and `Err(String)`
-   - change the body of the function to return `Ok(stuff)` where it currently
-     returns `Some(stuff)`
-   - change the body of the function to return `Err(error message)` where it
-     currently returns `None`"""
+要改变这，你将需要：
+   - 更新函数签名的返回值类型为 Result<String, String>，它的变量值可以是 `Ok(String)` 和 `Err(String)`
+   - 修改函数体返回 `Some(stuff)` 的地方为返回 `Ok(stuff)`
+   - 修改函数体返回 `None` 的地方为返回 `Err(error message)`"""
 
 [[exercises]]
 name = "errors2"

@@ -8,7 +8,7 @@ If you'd like to learn more about writing your own macros, the
 [macrokata](https://github.com/tfpk/macrokata) project has a similar style
 of exercises to Rustlings, but is all about learning to write Macros.
 
-## Further information
+## 更多信息
 
 - [Macros](https://doc.rust-lang.org/book/ch19-06-macros.html)
 - [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)

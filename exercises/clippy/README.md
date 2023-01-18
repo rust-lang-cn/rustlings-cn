@@ -5,6 +5,6 @@ The Clippy tool is a collection of lints to analyze your code so you can catch c
 If you used the installation script for Rustlings, Clippy should be already installed.
 If not you can install it manually via `rustup component add clippy`.
 
-## Further information
+## 更多信息
 
 - [GitHub Repository](https://github.com/rust-lang/rust-clippy).
