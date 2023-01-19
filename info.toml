@@ -688,10 +688,11 @@ name = "traits4"
 path = "exercises/traits/traits4.rs"
 mode = "test"
 hint = """
-Instead of using concrete types as parameters you can use traits. Try replacing the
-'??' with 'impl <what goes here?>'
+作为替换，你可以使用 trait 而不是使用混合类型。
+尝试替换 '??' 为 'impl <这里会是什么？>'
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#traits-as-parameters
+查看文档：https://doc.rust-lang.org/book/ch10-02-traits.html#traits-as-parameters
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch10-02-traits.html#trait-%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0
 """
 
 [[exercises]]
