@@ -7,14 +7,15 @@
 // 添加到任意实现了这个 trait 的对象中。
 // 执行 `rustlings hint traits1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 trait AppendBar {
     fn append_bar(self) -> Self;
 }
 
 impl AppendBar for String {
     // TODO: 为类型 `String` 实现 `AppendBar`。
+    fn append_bar(self) -> Self {
+        self + "Bar"
+    }
 }
 
 fn main() {
