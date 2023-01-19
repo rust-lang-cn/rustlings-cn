@@ -3,14 +3,12 @@
 
 // 执行 `rustlings hint generics2` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
-struct Wrapper {
-    value: u32,
+struct Wrapper<T> {
+    value: T,
 }
 
-impl Wrapper {
-    pub fn new(value: u32) -> Self {
+impl<T> Wrapper<T> {
+    pub fn new(value: T) -> Self {
         Wrapper { value }
     }
 }
