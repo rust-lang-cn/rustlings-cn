@@ -761,10 +761,10 @@ name = "lifetimes2"
 path = "exercises/lifetimes/lifetimes2.rs"
 mode = "compile"
 hint = """
-Remember that the generic lifetime 'a will get the concrete lifetime that is equal to the smaller of the lifetimes of x and y.
-You can take at least two paths to achieve the desired result while keeping the inner block:
-1. Move the string2 declaration to make it live as long as string1 (how is result declared?)
-2. Move println! into the inner block"""
+记住泛型生命周期 'a 会得到具体的生命周期，它会等于生命周期 x 和 y 中较小的那个。
+在保持内部块的前提下，你有至少两种途径可以达成你想要的结果：
+1. 移动 string2 声明使其和 string1 存活一样久（result 是怎么被声明的？）
+2. 移动 println! 到内部块中"""
 
 [[exercises]]
 name = "lifetimes3"
