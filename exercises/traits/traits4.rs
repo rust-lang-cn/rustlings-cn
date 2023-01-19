@@ -4,8 +4,6 @@
 // 不要修改此外的任何行。
 // 执行 `rustlings hint traits4` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 pub trait Licensed {
     fn licensing_info(&self) -> String {
         "some information".to_string()
@@ -20,7 +18,7 @@ impl Licensed for SomeSoftware {}
 impl Licensed for OtherSoftware {}
 
 // 你只能修改下一行
-fn compare_license_types(software: ??, software_two: ??) -> bool {
+fn compare_license_types(software: impl Licensed, software_two: impl Licensed) -> bool {
     software.licensing_info() == software_two.licensing_info()
 }
 
