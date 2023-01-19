@@ -656,8 +656,9 @@ name = "traits1"
 path = "exercises/traits/traits1.rs"
 mode = "test"
 hint = """
-A discussion about Traits in Rust can be found at:
+关于 Rust 的 trait 的讨论，请访问：
 https://doc.rust-lang.org/book/ch10-02-traits.html
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch10-02-traits.html
 """
 
 [[exercises]]
