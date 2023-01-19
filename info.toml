@@ -666,12 +666,10 @@ name = "traits2"
 path = "exercises/traits/traits2.rs"
 mode = "test"
 hint = """
-Notice how the trait takes ownership of 'self',and returns `Self`.
-Try mutating the incoming string vector. Have a look at the tests to see
-what the result should look like!
+注意 trait 如何获取 'self' 的所有权和返回 `Self`。
+尝试修改传入的字符串 vector。注意下测试中的结果看起来应该是怎样的！
 
-Vectors provide suitable methods for adding an element at the end. See
-the documentation at: https://doc.rust-lang.org/std/vec/struct.Vec.html"""
+Vector 提供了适当的方法在尾部添加元素。看一下这个文档：https://doc.rust-lang.org/std/vec/struct.Vec.html"""
 
 [[exercises]]
 name = "traits3"
