@@ -3,8 +3,6 @@
 // 然后编写第二个测试来测试当我们调用 `is_even(5)` 时是否会获得我们想要的结果。
 // 执行 `rustlings hint tests3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 pub fn is_even(num: i32) -> bool {
     num % 2 == 0
 }
@@ -15,11 +13,11 @@ mod tests {
 
     #[test]
     fn is_true_when_even() {
-        assert!();
+        assert!(is_even(6));
     }
 
     #[test]
     fn is_false_when_odd() {
-        assert!();
+        assert!(!is_even(5));
     }
 }
