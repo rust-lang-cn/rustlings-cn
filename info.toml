@@ -700,10 +700,10 @@ name = "traits5"
 path = "exercises/traits/traits5.rs"
 mode = "compile"
 hint = """
-To ensure a parameter implements multiple traits use the '+ syntax'. Try replacing the
-'??' with 'impl <> + <>'.
+为了确保一个参数实现了多个 traits，使用 '+ 号'。尝试替换 '??' 为 'impl <> + <>'。
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax
+查看文档：https://doc.rust-lang.org/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch10-02-traits.html#%E9%80%9A%E8%BF%87--%E6%8C%87%E5%AE%9A%E5%A4%9A%E4%B8%AA-trait-bound
 """
 
 # QUIZ 3
