@@ -634,8 +634,8 @@ name = "generics1"
 path = "exercises/generics/generics1.rs"
 mode = "compile"
 hint = """
-Vectors in Rust make use of generics to create dynamically sized arrays of any type.
-You need to tell the compiler what type we are pushing onto this vector."""
+Rust 中的 Vectors 使用泛型来创建任意类型的动态大小数组。
+你需要告诉编译器你要推入这个 vector 的类型。"""
 
 [[exercises]]
 name = "generics2"
