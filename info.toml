@@ -642,10 +642,11 @@ name = "generics2"
 path = "exercises/generics/generics2.rs"
 mode = "test"
 hint = """
-Currently we are wrapping only values of type 'u32'.
-Maybe we could update the explicit references to this data type somehow?
+现在我们只包装了类型为 'u32' 的值。
+或许我们可以以某种方法更新这个数据类型的显示引用？
 
-If you are still stuck https://doc.rust-lang.org/stable/book/ch10-01-syntax.html#in-method-definitions
+如果你仍然被卡住，阅读： https://doc.rust-lang.org/stable/book/ch10-01-syntax.html#in-method-definitions
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch10-01-syntax.html#%E6%96%B9%E6%B3%95%E5%AE%9A%E4%B9%89%E4%B8%AD%E7%9A%84%E6%B3%9B%E5%9E%8B
 """
 
 # TRAITS
