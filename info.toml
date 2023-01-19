@@ -771,7 +771,7 @@ name = "lifetimes3"
 path = "exercises/lifetimes/lifetimes3.rs"
 mode = "compile"
 hint = """
-If you use a lifetime annotation in a struct's fields, where else does it need to be added?"""
+如果你在一个结构体字段上使用生命周期标注，你需要在其它什么地方添加它？"""
 
 # STANDARD LIBRARY TYPES
 
