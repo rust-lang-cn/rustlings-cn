@@ -713,8 +713,8 @@ name = "quiz3"
 path = "exercises/quiz3.rs"
 mode = "test"
 hint = """
-To find the best solution to this challenge you're going to need to think back to your
-knowledge of traits, specifically Trait Bound Syntax -  you may also need this: `use std::fmt::Display;`."""
+为了找到这个挑战的解决方法，你将需要回想你关于 traits 的知识，
+特别是 Trait Bound 语法 - 你还可能需要这个： `use std::fmt::Display;`。"""
 
 # TESTS
 
