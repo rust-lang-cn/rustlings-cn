@@ -6,10 +6,10 @@
 // 思考一下你可以往 Licensed trait 中加什么。
 // 执行 `rustlings hint traits3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 pub trait Licensed {
-    fn licensing_info(&self) -> String;
+    fn licensing_info(&self) -> String {
+        String::from("Some information")
+    }
 }
 
 struct SomeSoftware {
