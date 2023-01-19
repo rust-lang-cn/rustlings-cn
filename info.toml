@@ -676,11 +676,11 @@ name = "traits3"
 path = "exercises/traits/traits3.rs"
 mode = "test"
 hint = """
-Traits can have a default implementation for functions. Structs that implement
-the trait can then use the default version of these functions if they choose not
-implement the function themselves.
+Traits 可以有函数的默认实现。实现了这个 trait 的结构体
+可以使用默认版本的函数，如果它们选择不自行实现这个函数。
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
+查看文档：https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch10-02-traits.html#%E9%BB%98%E8%AE%A4%E5%AE%9E%E7%8E%B0
 """
 
 [[exercises]]
