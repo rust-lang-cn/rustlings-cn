@@ -742,9 +742,8 @@ name = "tests3"
 path = "exercises/tests/tests3.rs"
 mode = "test"
 hint = """
-You can call a function right where you're passing arguments to `assert!` -- so you could do
-something like `assert!(having_fun())`. If you want to check that you indeed get false, you
-can negate the result of what you're doing using `!`, like `assert!(!having_fun())`."""
+你可以给 `assert!` 传入正确的函数调用 -- 所以你可以像 `assert!(having_fun())` 这样做。
+如果你想要检查你确实获得了 false，你可以使用 `!` 进行取反，比如 `assert!(!having_fun())`。"""
 
 # LIFETIMES
 
