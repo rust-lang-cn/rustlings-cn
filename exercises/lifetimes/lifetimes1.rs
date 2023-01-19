@@ -7,9 +7,7 @@
 //
 // 执行 `rustlings hint lifetimes1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
-fn longest(x: &str, y: &str) -> &str {
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() {
         x
     } else {
