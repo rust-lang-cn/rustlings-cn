@@ -752,8 +752,9 @@ name = "lifetimes1"
 path = "exercises/lifetimes/lifetimes1.rs"
 mode = "compile"
 hint = """
-Let the compiler guide you. Also take a look at the book if you need help:
-https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html"""
+让编译器指导你。如果你需要帮助的话，也可以看一下书本：
+https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch10-03-lifetime-syntax.html"""
 
 [[exercises]]
 name = "lifetimes2"
