@@ -4,11 +4,9 @@
 //
 // 执行 `rustlings hint lifetimes3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
-struct Book {
-    author: &str,
-    title: &str,
+struct Book<'a> {
+    author: &'a str,
+    title: &'a str,
 }
 
 fn main() {
