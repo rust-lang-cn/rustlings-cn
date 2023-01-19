@@ -723,11 +723,10 @@ name = "tests1"
 path = "exercises/tests/tests1.rs"
 mode = "test"
 hint = """
-You don't even need to write any code to test -- you can just test values and run that, even
-though you wouldn't do that in real life :) `assert!` is a macro that needs an argument.
-Depending on the value of the argument, `assert!` will do nothing (in which case the test will
-pass) or `assert!` will panic (in which case the test will fail). So try giving different values
-to `assert!` and see which ones compile, which ones pass, and which ones fail :)"""
+你甚至不用在测试中写任何代码 -- 你可以值测试值并运行，虽然在显示中你不会这样做 :)
+`assert!` 是一个宏，需要一个参数。基于参数的值，`assert!` 将什么都不做（这种场景下测试将会通过）
+或者 `assert!` 将会 panic （这种情况下测试将会失败）。因此，尝试给 `assert!` 不同的值并看看
+哪个编译了，哪个通过了，哪个失败了 :)"""
 
 [[exercises]]
 name = "tests2"
