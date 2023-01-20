@@ -833,12 +833,11 @@ name = "iterators4"
 path = "exercises/iterators/iterators4.rs"
 mode = "test"
 hint = """
-In an imperative language, you might write a for loop that updates
-a mutable variable. Or, you might write code utilizing recursion
-and a match clause. In Rust you can take another functional
-approach, computing the factorial elegantly with ranges and iterators.
+在一个命令式语言中，你可能编写一个 for 循环来更新可变变量。
+或者，你可能编写利用递归和匹配语句编写代码。
+在 Rust 中你可以使用另一种函数方法，使用范围和迭代器优雅地计算阶乘。
 
-Hint 2: Check out the `fold` and `rfold` methods!"""
+提示 2：查看 `fold` 和 `rfold` 方法！"""
 
 [[exercises]]
 name = "iterators5"
