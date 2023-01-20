@@ -131,7 +131,7 @@ fn main() {
 
     if !Path::new("info.toml").exists() {
         println!(
-            "{} must be run from the rustlings directory",
+            "{} 必须在 rustlings 目录下运行",
             std::env::current_exe().unwrap().to_str().unwrap()
         );
         println!("Try `cd rustlings/`!");
@@ -139,9 +139,9 @@ fn main() {
     }
 
     if !rustc_exists() {
-        println!("We cannot find `rustc`.");
-        println!("Try running `rustc --version` to diagnose your problem.");
-        println!("For instructions on how to install Rust, check the README.");
+        println!("我们找不到 `rustc`。");
+        println!("尝试运行 `rustc --version` 诊断你的问题。");
+        println!("阅读 README 查看如何安装 Rust。");
         std::process::exit(1);
     }
 
@@ -156,7 +156,7 @@ fn main() {
     match command {
         Subcommands::List(subargs) => {
             if !subargs.paths && !subargs.names {
-                println!("{:<17}\t{:<46}\t{:<7}", "Name", "Path", "Status");
+                println!("{:<17}\t{:<46}\t{:<7}", "名字", "路径", "状态");
             }
             let mut exercises_done: u16 = 0;
             let filters = subargs.filter.clone().unwrap_or_default().to_lowercase();
@@ -202,7 +202,7 @@ fn main() {
             });
             let percentage_progress = exercises_done as f32 / exercises.len() as f32 * 100.0;
             println!(
-                "Progress: You completed {} / {} exercises ({:.1} %).",
+                "进度： 你已经完成了 {} / {} 个练习 ({:.1} %)。",
                 exercises_done,
                 exercises.len(),
                 percentage_progress
@@ -237,40 +237,40 @@ fn main() {
             let mut project = RustAnalyzerProject::new();
             project
                 .get_sysroot_src()
-                .expect("Couldn't find toolchain path, do you have `rustc` installed?");
+                .expect("找不到工具链路径，你安装 `rustc` 了吗？");
             project
                 .exercises_to_json()
-                .expect("Couldn't parse rustlings exercises files");
+                .expect("无法解析 rustlings 练习文件");
 
             if project.crates.is_empty() {
-                println!("Failed find any exercises, make sure you're in the `rustlings` folder");
+                println!("无法找到任何练习，确定你在 `rustlings` 文件夹");
             } else if project.write_to_disk().is_err() {
-                println!("Failed to write rust-project.json to disk for rust-analyzer");
+                println!("无法为 rust-analyzer 将 rust-project.json 写到硬盘");
             } else {
-                println!("Successfully generated rust-project.json");
-                println!("rust-analyzer will now parse exercises, restart your language server or editor")
+                println!("成功生成 rust-project.json");
+                println!("rust-analyzer 现在将解析练习，重启你的语言服务器或编辑器")
             }
         }
 
         Subcommands::Watch(_subargs) => match watch(&exercises, verbose) {
             Err(e) => {
                 println!(
-                    "Error: Could not watch your progress. Error message was {:?}.",
+                    "错误：无法观察你的进度。错误信息： {:?}.",
                     e
                 );
-                println!("Most likely you've run out of disk space or your 'inotify limit' has been reached.");
+                println!("很可能你的磁盘空间已满或达到了你的 'inotify 限制'。");
                 std::process::exit(1);
             }
             Ok(WatchStatus::Finished) => {
                 println!(
-                    "{emoji} All exercises completed! {emoji}",
+                    "{emoji} 所有的练习都完成了！ {emoji}",
                     emoji = Emoji("🎉", "★")
                 );
                 println!("\n{FENISH_LINE}\n");
             }
             Ok(WatchStatus::Unfinished) => {
-                println!("We hope you're enjoying learning about Rust!");
-                println!("If you want to continue working on the exercises at a later point, you can simply run `rustlings watch` again");
+                println!("我们希望你享受学习 Rust！");
+                println!("如果你想以后继续练习，你只需再次运行 `rustlings watch` 即可");
             }
         },
     }
@@ -281,7 +281,7 @@ fn spawn_watch_shell(
     should_quit: Arc<AtomicBool>,
 ) {
     let failed_exercise_hint = Arc::clone(failed_exercise_hint);
-    println!("Welcome to watch mode! You can type 'help' to get an overview of the commands you can use here.");
+    println!("欢迎来到观察模式！你可以键入 'help' 来查看你可以使用的指令概况。");
     thread::spawn(move || loop {
         let mut input = String::new();
         match io::stdin().read_line(&mut input) {
@@ -297,19 +297,19 @@ fn spawn_watch_shell(
                     should_quit.store(true, Ordering::SeqCst);
                     println!("Bye!");
                 } else if input.eq("help") {
-                    println!("Commands available to you in watch mode:");
-                    println!("  hint  - prints the current exercise's hint");
-                    println!("  clear - clears the screen");
-                    println!("  quit  - quits watch mode");
-                    println!("  help  - displays this help message");
+                    println!("你可以在观察模式中使用的指令：");
+                    println!("  hint  - 打印当前练习的提示");
+                    println!("  clear - 清空屏幕");
+                    println!("  quit  - 退出观察模式");
+                    println!("  help  - 显示这个帮助信息");
                     println!();
-                    println!("Watch mode automatically re-evaluates the current exercise");
-                    println!("when you edit a file's contents.")
+                    println!("观察模式自动重新评价当前练习");
+                    println!("当你编辑一个文件的内容时。")
                 } else {
-                    println!("unknown command: {input}");
+                    println!("未知命令： {input}");
                 }
             }
-            Err(error) => println!("error reading command: {error}"),
+            Err(error) => println!("读取命令错误： {error}"),
         }
     });
 }
@@ -320,8 +320,8 @@ fn find_exercise<'a>(name: &str, exercises: &'a [Exercise]) -> &'a Exercise {
             .iter()
             .find(|e| !e.looks_done())
             .unwrap_or_else(|| {
-                println!("🎉 Congratulations! You have done all the exercises!");
-                println!("🔚 There are no more exercises to do next!");
+                println!("🎉 恭喜！你已经完成了所有练习！");
+                println!("🔚 接下来没有更多练习给你做了！");
                 std::process::exit(1)
             })
     } else {
@@ -329,7 +329,7 @@ fn find_exercise<'a>(name: &str, exercises: &'a [Exercise]) -> &'a Exercise {
             .iter()
             .find(|e| e.name == name)
             .unwrap_or_else(|| {
-                println!("No exercise found for '{name}'!");
+                println!("找不到练习 '{name}'！");
                 std::process::exit(1)
             })
     }
@@ -392,7 +392,7 @@ fn watch(exercises: &[Exercise], verbose: bool) -> notify::Result<WatchStatus> {
             Err(RecvTimeoutError::Timeout) => {
                 // the timeout expired, just check the `should_quit` variable below then loop again
             }
-            Err(e) => println!("watch error: {e:?}"),
+            Err(e) => println!("观察错误： {e:?}"),
         }
         // Check if we need to exit
         if should_quit.load(Ordering::SeqCst) {
@@ -442,7 +442,7 @@ const DEFAULT_OUT: &str = r#"感谢你安装 Rustlings!
 练习。请确保你已经打开了你的编辑器！"#;
 
 const FENISH_LINE: &str = r#"+----------------------------------------------------+
-|          You made it to the Fe-nish line!          |
+|                       你成功了                      |
 +--------------------------  ------------------------+
                           \\/
      ▒▒          ▒▒▒▒▒▒▒▒      ▒▒▒▒▒▒▒▒          ▒▒
@@ -461,11 +461,11 @@ const FENISH_LINE: &str = r#"+--------------------------------------------------
        ▒▒  ▒▒    ▒▒                  ▒▒    ▒▒  ▒▒
            ▒▒  ▒▒                      ▒▒  ▒▒
 
-We hope you enjoyed learning about the various aspects of Rust!
-If you noticed any issues, please don't hesitate to report them to our repo.
-You can also contribute your own exercises to help the greater community!
+我们希望你喜欢学习 Rust 的各个方面！
+如果你注意到任何问题，请立即向我们的仓库报告。
+你也可以贡献你自己的练习来帮助更好的社区！
 
-Before reporting an issue or contributing, please read our guidelines:
+在报告错误或贡献之前，请阅读我们的指南：
 https://github.com/rust-lang/rustlings/blob/main/CONTRIBUTING.md"#;
 
 const WELCOME: &str = r#"       欢迎来到...

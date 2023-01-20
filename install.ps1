@@ -63,7 +63,7 @@ if ((vercomp $rustVersion $minRustVersion) -eq 2) {
 }
 
 Write-Host "Cloning Rustlings at $path"
-git clone -q https://github.com/focksor/rustlings-cn.git $path
+git clone -q https://github.com/rust-lang-cn/rustlings-cn.git $path
 if (!($LASTEXITCODE -eq 0)) {
     exit 1
 }

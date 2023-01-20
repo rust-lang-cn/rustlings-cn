@@ -1,5 +1,5 @@
-// This powerful wrapper provides the ability to store a positive integer value.
-// Rewrite it using generics so that it supports wrapping ANY type.
+// 这个强大的 wrapper 提供了存储正整数的能力。
+// 使用泛型重写它以支持包装任何类型。
 
 // 执行 `rustlings hint generics2` 或在观察模式下使用 `hint` 子命令来获取提示。
 

@@ -12,7 +12,7 @@ mod tests {
         let target = "rustlings";
         let optional_target = Some(target);
 
-        // TODO: Make this an if let statement whose value is "Some" type
+        // TODO: 将这个改为一个值为 "Some" 类型的 if let 语句
         word = optional_target {
             assert_eq!(word, target);
         }
@@ -26,8 +26,8 @@ mod tests {
             optional_integers.push(Some(i));
         }
 
-        // TODO: make this a while let statement - remember that vector.pop also adds another layer of Option<T>
-        // You can stack `Option<T>`'s into while let and if let
+        // TODO: 写为 while let 语句 - 记住 vector.pop 也添加了一层 Option<T>
+        // 你可以堆叠 `Option<T>` 到 while let 和 if let 中
         integer = optional_integers.pop() {
             assert_eq!(integer, range);
             range -= 1;

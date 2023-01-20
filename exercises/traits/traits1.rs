@@ -1,12 +1,10 @@
 // traits1.rs
-// Time to implement some traits!
+// 是时候实现一些 trait 了！
 //
-// Your task is to implement the trait
-// `AppendBar` for the type `String`.
+// 你的任务是为类型 String` 实现 trait `AppendBar`。
 //
-// The trait AppendBar has only one function,
-// which appends "Bar" to any object
-// implementing this trait.
+// trait AppendBar 只有一个函数，它将 "Bar"
+// 添加到任意实现了这个 trait 的对象中。
 // 执行 `rustlings hint traits1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 // I AM NOT DONE
@@ -16,7 +14,7 @@ trait AppendBar {
 }
 
 impl AppendBar for String {
-    // TODO: Implement `AppendBar` for type `String`.
+    // TODO: 为类型 `String` 实现 `AppendBar`。
 }
 
 fn main() {

@@ -14,7 +14,7 @@ enum CreationError {
 
 impl PositiveNonzeroInteger {
     fn new(value: i64) -> Result<PositiveNonzeroInteger, CreationError> {
-        // Hmm...? Why is this only returning an Ok value?
+        // 嗯。。为什么这只返回了一个 Ok 值？
         Ok(PositiveNonzeroInteger(value as u64))
     }
 }
