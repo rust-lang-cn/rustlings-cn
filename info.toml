@@ -987,36 +987,30 @@ name = "macros2"
 path = "exercises/macros/macros2.rs"
 mode = "compile"
 hint = """
-Macros don't quite play by the same rules as the rest of Rust, in terms of
-what's available where.
+在关于可用处部分，Rust 的宏和其它部分不完全遵循相同的规则。
 
-Unlike other things in Rust, the order of "where you define a macro" versus
-"where you use it" actually matters."""
+不像 Rust 的其它东西，"你定义宏的位置" 和 "你使用宏的位置" 的顺序实际上会影响。"""
 
 [[exercises]]
 name = "macros3"
 path = "exercises/macros/macros3.rs"
 mode = "compile"
 hint = """
-In order to use a macro outside of its module, you need to do something
-special to the module to lift the macro out into its parent.
+为了在其模块外使用宏，你需要对模块做点特别的事情来将
+宏提到其父级。
 
-The same trick also works on "extern crate" statements for crates that have
-exported macros, if you've seen any of those around."""
+同样的技巧也适用于使用 "extern crate" 语句导出宏的 creates，如果你见到过的话。"""
 
 [[exercises]]
 name = "macros4"
 path = "exercises/macros/macros4.rs"
 mode = "compile"
 hint = """
-You only need to add a single character to make this compile.
-The way macros are written, it wants to see something between each
-"macro arm", so it can separate them.
+你只需要添加一个字符就可以让编译通过。
+编写宏的方法是，它希望在每个 "macro arm" 中有某些东西，这样就能区分它们。
 
-That's all the macro exercises we have in here, but it's barely even
-scratching the surface of what you can do with Rust's macros. For a more
-thorough introduction, you can have a read through the little book of Rust
-macros: https://veykril.github.io/tlborm/"""
+到此为止就是我们全部的宏的练习了，但它几乎没有接触 Rust 的宏的表面。
+要获得更全面的介绍，你可以通读 Rust 宏的小读本：https://veykril.github.io/tlborm/"""
 
 #  CLIPPY
 

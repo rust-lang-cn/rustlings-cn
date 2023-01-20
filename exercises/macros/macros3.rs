@@ -1,5 +1,5 @@
 // macros3.rs
-// Make me compile, without taking the macro out of the module!
+// 让我可以编译，在不将宏移出模块的前提下！
 // 执行 `rustlings hint macros3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
 #[macro_use]
