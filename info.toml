@@ -902,13 +902,13 @@ name = "threads3"
 path = "exercises/threads/threads3.rs"
 mode = "compile"
 hint = """
-An alternate way to handle concurrency between threads is to use
-a mpsc (multiple producer, single consumer) channel to communicate.
-With both a sending end and a receiving end, it's possible to
-send values in one thread and receive them in another.
-Multiple producers are possible by using clone() to create a duplicate
-of the original sending end.
-See https://doc.rust-lang.org/book/ch16-02-message-passing.html for more info.
+处理线程并发的另一种方法是使用一个 mpsc (multiple producer(多生产者), single consumer(单消费者)) 通道来通信。
+有了发送端和接收端，在一个线程中发送值并在另一个线程接受成为可能。
+通过原始发送端使用 clone() 创建副本可以获得多个生产者。
+
+查看 https://doc.rust-lang.org/book/ch16-02-message-passing.html
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch16-02-message-passing.html
+以获得更多信息。
 """
 
 # SMART POINTERS
