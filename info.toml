@@ -935,13 +935,14 @@ name = "rc1"
 path = "exercises/smart_pointers/rc1.rs"
 mode = "compile"
 hint = """
-This is a straightforward exercise to use the Rc<T> type. Each Planet has
-ownership of the Sun, and uses Rc::clone() to increment the reference count of the Sun.
-After using drop() to move the Planets out of scope individually, the reference count goes down.
-In the end the sun only has one reference again, to itself. See more at:
+这是一个使用 Rc<T> 类型的简单练习。每个行星都拥有太阳的所有权，
+并使用 Rc::clone() 来增加太阳的引用计数。
+当使用 drop() 将行星各自移出作用域后，引用计数会随之下降。
+最终，太阳只有一个引用，即它本身，更多信息：
 https://doc.rust-lang.org/book/ch15-04-rc.html
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch15-04-rc.html
 
-* Unfortunately Pluto is no longer considered a planet :(
+* 不幸的是，冥王星不再被认为是一颗行星 :(
 """
 
 [[exercises]]
