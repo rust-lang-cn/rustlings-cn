@@ -27,8 +27,6 @@ enum ParsePersonError {
     ParseInt(ParseIntError),
 }
 
-// I AM NOT DONE
-
 // 步骤：
 // 1. 如果提供的字符串长度为 0，应该返回一个错误
 // 2. 根据逗号位置分割给定字符串
@@ -44,6 +42,30 @@ enum ParsePersonError {
 impl FromStr for Person {
     type Err = ParsePersonError;
     fn from_str(s: &str) -> Result<Person, Self::Err> {
+        if s.len() == 0 {
+            return Err(ParsePersonError::Empty);
+        }
+
+        let s_split: Vec<&str> = s.split(',').collect();
+
+        if s_split.len() != 2 {
+            return Err(ParsePersonError::BadLen);
+        }
+
+        let name = s_split[0].to_string();
+        if name.len() == 0 {
+            return Err(ParsePersonError::NoName);
+        }
+
+        match s_split[1].parse::<usize>() {
+            Ok(age) => Ok(Person {
+                name,
+                age
+            }),
+            Err(err) => {
+                Err(ParsePersonError::ParseInt(err))
+            }
+        }
     }
 }
 
