@@ -9,8 +9,6 @@
 //
 // 让代码可以编译，测试可以通过。
 
-// I AM NOT DONE
-
 use std::collections::HashMap;
 
 #[derive(Clone, Copy, PartialEq, Eq)]
@@ -33,7 +31,7 @@ fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
 fn count_iterator(map: &HashMap<String, Progress>, value: Progress) -> usize {
     // map是一个有 String 键和 Progress 值的哈希表。
     // map = { "variables1": Complete, "from_str": None, ... }
-    todo!();
+    map.values().filter(|v| v == &&value).count()
 }
 
 fn count_collection_for(collection: &[HashMap<String, Progress>], value: Progress) -> usize {
@@ -52,7 +50,7 @@ fn count_collection_iterator(collection: &[HashMap<String, Progress>], value: Pr
     // collection 是哈希表的切片。
     // collection = [{ "variables1": Complete, "from_str": None, ... },
     //     { "variables2": Complete, ... }, ... ]
-    todo!();
+    collection.iter().map(|v| count_iterator(v, value)).sum()
 }
 
 #[cfg(test)]
