@@ -1,7 +1,7 @@
 // threads2.rs
 // 执行 `rustlings hint threads2` 或在观察模式下使用 `hint` 子命令来获取提示。
-// Building on the last exercise, we want all of the threads to complete their work but this time
-// the spawned threads need to be in charge of updating a shared value: JobStatus.jobs_completed
+// 基于上一个练习，我们想要所有线程完成它们的工作，但是这回
+// 派生线程需要需要负责更新一个共享的值： JobStatus.jobs_completed
 
 // I AM NOT DONE
 
@@ -20,15 +20,15 @@ fn main() {
         let status_shared = Arc::clone(&status);
         let handle = thread::spawn(move || {
             thread::sleep(Duration::from_millis(250));
-            // TODO: You must take an action before you update a shared value
+            // TODO: 在更新共享值之前，你还需要做点什么
             status_shared.jobs_completed += 1;
         });
         handles.push(handle);
     }
     for handle in handles {
         handle.join().unwrap();
-        // TODO: Print the value of the JobStatus.jobs_completed. Did you notice anything
-        // interesting in the output? Do you have to 'join' on all the handles?
+        // TODO: 打印 JobStatus.jobs_completed 的值。你可以从输出中注意到有趣的东西吗？
+        // 你必须要 'join' 所有的线程句柄吗？
         println!("jobs completed {}", ???);
     }
 }
