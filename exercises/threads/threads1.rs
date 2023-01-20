@@ -1,6 +1,6 @@
 // threads1.rs
 // 执行 `rustlings hint threads1` 或在观察模式下使用 `hint` 子命令来获取提示。
-// This program should wait until all the spawned threads have finished before exiting.
+// 这个程序应等待所有派生线程完成后再退出。
 
 // I AM NOT DONE
 
@@ -20,7 +20,7 @@ fn main() {
 
     let mut completed_threads = 0;
     for handle in handles {
-        // TODO: a struct is returned from thread::spawn, can you use it?
+        // TODO: 从 thread::spawn 返回了一个结构，你可以使用它吗？
         completed_threads += 1;
     }
 
