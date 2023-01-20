@@ -1019,15 +1019,12 @@ name = "clippy1"
 path = "exercises/clippy/clippy1.rs"
 mode = "clippy"
 hint = """
-Rust stores the highest precision version of any long or infinite precision
-mathematical constants in the Rust standard library.
+Rust 将任何长精度或无限精度数学常数的最高精度版本存储在 Rust 的标准库中。
 https://doc.rust-lang.org/stable/std/f32/consts/index.html
 
-We may be tempted to use our own approximations for certain mathematical constants,
-but clippy recognizes those imprecise mathematical constants as a source of
-potential error.
-See the suggestions of the clippy warning in compile output and use the
-appropriate replacement constant from std::f32::consts..."""
+我们可能会尝试使用我们自己的某些数学常数的近似值，
+但是 clippy 识别那些不精确的数学常数作为潜在的错误源。
+查看编译输出中 clippy 的警告给出的建议，并使用 std::f32::consts 适当替换常量..."""
 
 [[exercises]]
 name = "clippy2"
