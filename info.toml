@@ -1078,26 +1078,25 @@ name = "try_from_into"
 path = "exercises/conversions/try_from_into.rs"
 mode = "test"
 hint = """
-Follow the steps provided right before the `TryFrom` implementation.
-You can also use the example at https://doc.rust-lang.org/std/convert/trait.TryFrom.html
+跟着 `TryFrom` 实现前的提供的步骤。
+你可以使用在 https://doc.rust-lang.org/std/convert/trait.TryFrom.html 中的示例。
 
-Is there an implementation of `TryFrom` in the standard library that
-can both do the required integer conversion and check the range of the input?
+标准库中是否有一个 `TryFrom` 的实现可以既可以执行需要的整数转换又可以检查输入的范围？
 
-Another hint: Look at the test cases to see which error variants to return.
+另外一个提示：看一下测试用例，看看应该返回什么错误。
 
-Yet another hint: You can use the `map_err` or `or` methods of `Result` to
-convert errors.
+还有另一个提示：你可以使用 `Result` 的 `map_err` 方法于函数或闭包上包装来自 `parse::<usize>` 的错误。
 
-Yet another hint: If you would like to propagate errors by using the `?`
-operator in your solution, you might want to look at
+还有另一个提示：如果你想要
+
+还有另一个提示：如果你想要在你的解决方案中通过 `?` 运算符传播错误，你可能想要看看：
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html
 
-Challenge: Can you make the `TryFrom` implementations generic over many integer types?"""
+挑战：你可以让 `TryFrom` 在多种整数类型的泛型上实现吗？"""
 
 [[exercises]]
 name = "as_ref_mut"
 path = "exercises/conversions/as_ref_mut.rs"
 mode = "test"
 hint = """
-Add AsRef<str> as a trait bound to the functions."""
+添加 AsRef<str> 作为 trait bound 到函数。"""
