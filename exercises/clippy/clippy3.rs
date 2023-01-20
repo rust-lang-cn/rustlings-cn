@@ -1,5 +1,5 @@
 // clippy3.rs
-// Here's a couple more easy Clippy fixes, so you can see its utility.
+// 这里有几个更简单的 Clippy 修复，因此你可以看到它的实用性。
 
 // I AM NOT DONE
 
@@ -21,7 +21,7 @@ fn main() {
 
     let mut value_a = 45;
     let mut value_b = 66;
-    // Let's swap these two!
+    // 让我们交换它俩！
     value_a = value_b;
     value_b = value_a;
     println!("value a: {}; value b: {}", value_a, value_b);

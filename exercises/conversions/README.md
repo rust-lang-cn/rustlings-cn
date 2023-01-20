@@ -1,21 +1,24 @@
-# Type conversions
+# 类型转换
 
-Rust offers a multitude of ways to convert a value of a given type into another type.
+Rust 提供了多种方法将一个类型的值转为另一个类型。
 
-The simplest form of type conversion is a type cast expression. It is denoted with the binary operator `as`. For instance, `println!("{}", 1 + 1.0);` would not compile, since `1` is an integer while `1.0` is a float. However, `println!("{}", 1 as f32 + 1.0)` should compile. The exercise [`using_as`](using_as.rs) tries to cover this.
+类型转换的最简单方式是类型转换表达式。它用二元运算符 `as` 表示。例如，`println!("{}", 1 + 1.0);` 不能编译，因为
+`1` 是一个整数而 `1.0` 是一个浮点数。然而，`println!("{}", 1 as f32 + 1.0)` 可以编译。练习 [`using_as`](using_as.rs) 试图涵盖这一点。
 
-Rust also offers traits that facilitate type conversions upon implementation. These traits can be found under the [`convert`](https://doc.rust-lang.org/std/convert/index.html) module.
-The traits are the following:
-- `From` and `Into` covered in [`from_into`](from_into.rs)
-- `TryFrom` and `TryInto` covered in [`try_from_into`](try_from_into.rs)
-- `AsRef` and `AsMut` covered in [`as_ref_mut`](as_ref_mut.rs)
+Rust 还提供了实现后会便于类型转换的 trait。这些 traits 可以从这看到：
+[`convert`](https://doc.rust-lang.org/std/convert/index.html)。
+这些 traits 是：
+- `From` 和 `Into` 包含于 [`from_into`](from_into.rs)
+- `TryFrom` 和 `TryInto` 包含于 [`try_from_into`](try_from_into.rs)
+- `AsRef` 和 `AsMut` 包含于 [`as_ref_mut`](as_ref_mut.rs)
 
-Furthermore, the `std::str` module offers a trait called [`FromStr`](https://doc.rust-lang.org/std/str/trait.FromStr.html) which helps with converting strings into target types via the `parse` method on strings. If properly implemented for a given type `Person`, then `let p: Person = "Mark,20".parse().unwrap()` should both compile and run without panicking.
+此外，`std::str` 模块提供了一个叫做 [`FromStr`](https://doc.rust-lang.org/std/str/trait.FromStr.html) 的 trait，它帮助转换字符串为目标类型，通过字符串的 `parse` 方法。
+如果适当实现于给定类型 `Person`，那么 `let p: Person = "Mark,20".parse().unwrap()` 应该可以编译并不会导致 panic。
 
-These should be the main ways ***within the standard library*** to convert data into your desired types.
+这些应该是 ***在标准库中*** 将类型转换为你想要的类型的主要方法。
 
 ## 更多信息
 
-These are not directly covered in the book, but the standard library has a great documentation for it.
+书本中没有直接涵盖这些内容，但是标准库中有非常好的文档。
 - [conversions](https://doc.rust-lang.org/std/convert/index.html)
 - [`FromStr` trait](https://doc.rust-lang.org/std/str/trait.FromStr.html)
