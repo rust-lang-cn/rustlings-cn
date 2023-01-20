@@ -1,14 +1,13 @@
 // iterators5.rs
-// Let's define a simple model to track Rustlings exercise progress. Progress
-// will be modelled using a hash map. The name of the exercise is the key and
-// the progress is the value. Two counting functions were created to count the
-// number of exercises with a given progress. These counting functions use
-// imperative style for loops. Recreate this counting functionality using
-// iterators. Only the two iterator methods (count_iterator and
-// count_collection_iterator) need to be modified.
+// 让我们定义一个简单的模块来追踪 Rustlings 练习的进度。
+// 进度会使用哈希表组织。键是练习的名字，值是进度。
+// 两个计数函数被创建来数给定进度的练习数。
+// 这两个计数函数使用命令式的循环风格。
+// 使用迭代器重写这个计数功能。
+// 只需要改变两个迭代器方法 (count_iterator 和 count_collection_iterator)
 // 执行 `rustlings hint iterators5` 或在观察模式下使用 `hint` 子命令来获取提示。
 //
-// Make the code compile and the tests pass.
+// 让代码可以编译，测试可以通过。
 
 // I AM NOT DONE
 
@@ -32,7 +31,7 @@ fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
 }
 
 fn count_iterator(map: &HashMap<String, Progress>, value: Progress) -> usize {
-    // map is a hashmap with String keys and Progress values.
+    // map是一个有 String 键和 Progress 值的哈希表。
     // map = { "variables1": Complete, "from_str": None, ... }
     todo!();
 }
@@ -50,7 +49,7 @@ fn count_collection_for(collection: &[HashMap<String, Progress>], value: Progres
 }
 
 fn count_collection_iterator(collection: &[HashMap<String, Progress>], value: Progress) -> usize {
-    // collection is a slice of hashmaps.
+    // collection 是哈希表的切片。
     // collection = [{ "variables1": Complete, "from_str": None, ... },
     //     { "variables2": Complete, ... }, ... ]
     todo!();
