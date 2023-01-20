@@ -918,17 +918,16 @@ name = "box1"
 path = "exercises/smart_pointers/box1.rs"
 mode = "test"
 hint = """
-Step 1
-The compiler's message should help: since we cannot store the value of the actual type
-when working with recursive types, we need to store a reference (pointer) to its value.
-We should, therefore, place our `List` inside a `Box`. More details in the book here:
+步骤 1
+编译器的信息应该有帮助：由于我们不能在递归类型中存储真正的类型，我们需要存储这个值的引用（指针）。
+因此，我们应该将 `List` 放入一个 `Box` 中。更多细节：
 https://doc.rust-lang.org/book/ch15-01-box.html#enabling-recursive-types-with-boxes
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch15-01-box.html#box-%E5%85%81%E8%AE%B8%E5%88%9B%E5%BB%BA%E9%80%92%E5%BD%92%E7%B1%BB%E5%9E%8B
 
-Step 2
-Creating an empty list should be fairly straightforward (hint: peek at the assertions).
-For a non-empty list keep in mind that we want to use our Cons "list builder".
-Although the current list is one of integers (i32), feel free to change the definition
-and try other types!
+步骤 2
+创建一个空 list 应该非常简单（提示：查看断言）。
+对于非空 list，请记住我们希望使用我们的 Cons "list builder（列表生成器）"。
+尽管当前列表是其中一种整数 (i32)，但可以尝试随便改变定义并试试别的类型！
 """
 
 [[exercises]]

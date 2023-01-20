@@ -1,18 +1,17 @@
 // box1.rs
 //
-// At compile time, Rust needs to know how much space a type takes up. This becomes problematic
-// for recursive types, where a value can have as part of itself another value of the same type.
-// To get around the issue, we can use a `Box` - a smart pointer used to store data on the heap,
-// which also allows us to wrap a recursive type.
+// 在编译期，Rust 需要知道一个类型需要占用多少空间。这在递归类型中是有问题的，
+// 递归类型可以有一个同类型的值作为类型的一部分。
+// 为了解决这个问题，我们可以使用 `Box` - 一个智能指针，用于在堆上存储数据，
+// 也允许我们包装一个递归类型。
 //
-// The recursive type we're implementing in this exercise is the `cons list` - a data structure
-// frequently found in functional programming languages. Each item in a cons list contains two
-// elements: the value of the current item and the next item. The last item is a value called `Nil`.
+// 我们要在这个练习实现的递归类型是 `cons list` - 一个常见于函数式编程语言的数据结构。
+// cons list 的每个项包含两个元素：现在这个项的值和下一个项。最后一个项是一个叫做 `Nil` 的值。
 //
-// Step 1: use a `Box` in the enum definition to make the code compile
-// Step 2: create both empty and non-empty cons lists by replacing `todo!()`
+// 步骤 1：在 enum 定义中使用一个 `Box` 使代码可以编译
+// 步骤 2：创建一个空的和一个非空的 cons lists 取代 `todo!()`
 //
-// Note: the tests should not be changed
+// 注意：不能改变测试代码
 //
 // 执行 `rustlings hint box1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
