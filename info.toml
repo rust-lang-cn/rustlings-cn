@@ -797,21 +797,19 @@ name = "iterators2"
 path = "exercises/iterators/iterators2.rs"
 mode = "test"
 hint = """
-Step 1
-The variable `first` is a `char`. It needs to be capitalized and added to the
-remaining characters in `c` in order to return the correct `String`.
-The remaining characters in `c` can be viewed as a string slice using the
-`as_str` method.
-The documentation for `char` contains many useful methods.
+步骤 1
+变量 `first` 是一个 `char`。它需要变为大写并添加到 `c` 剩余的字符中以返回正确的 `String`。
+可以使用 `as_str` 方法将 `c` 剩余的字符视作一个字符串切片。
+关于 `char` 的文档包含很多有用的方法。
 https://doc.rust-lang.org/std/primitive.char.html
 
-Step 2
-Create an iterator from the slice. Transform the iterated values by applying
-the `capitalize_first` function. Remember to collect the iterator.
+步骤 2
+从切片创建一个迭代器。通过 `capitalize_first` 函数转换迭代中的值。
+记住要 collect 这个迭代器。
 
-Step 3.
-This is surprising similar to the previous solution. Collect is very powerful
-and very general. Rust just needs to know the desired type."""
+步骤 3
+惊喜的是，这个和上一个方案很像。Collect 是非常强大和通用的。
+Rust 只需要知道你希望的类型就行。"""
 
 [[exercises]]
 name = "iterators3"
