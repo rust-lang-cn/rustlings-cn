@@ -979,9 +979,8 @@ name = "macros1"
 path = "exercises/macros/macros1.rs"
 mode = "compile"
 hint = """
-When you call a macro, you need to add something special compared to a
-regular function call. If you're stuck, take a look at what's inside
-`my_macro`."""
+当你调用一个宏时，需要加上与常规函数调用不太一样的东西。
+如果你被卡住了，看一下 `my_macro` 里面有什么。"""
 
 [[exercises]]
 name = "macros2"
