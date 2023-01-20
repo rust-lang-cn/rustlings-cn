@@ -950,16 +950,15 @@ name = "arc1"
 path = "exercises/smart_pointers/arc1.rs"
 mode = "compile"
 hint = """
-Make `shared_numbers` be an `Arc` from the numbers vector. Then, in order
-to avoid creating a copy of `numbers`, you'll need to create `child_numbers`
-inside the loop but still in the main thread.
+使 `shared_numbers` 成为一个来自 numbers vector 的 `Arc`，为了避免创建
+`numbers` 的副本，你需要在循环中创建 `child_numbers`，但仍在主线程中。
 
-`child_numbers` should be a clone of the Arc of the numbers instead of a
-thread-local copy of the numbers.
+`child_numbers` 应该为 numbers 的 Arc 的一个 clone，而不是一个线程本地化的 numbers 副本。
 
-This is a simple exercise if you understand the underlying concepts, but if this
-is too much of a struggle, consider reading through all of Chapter 16 in the book:
+如果你理解了底层理念，这会是一个简单的练习，但是如果你觉得很有挑战，
+考虑阅读书本的第 16 章：
 https://doc.rust-lang.org/stable/book/ch16-00-concurrency.html
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch16-00-concurrency.html
 """
 
 [[exercises]]
