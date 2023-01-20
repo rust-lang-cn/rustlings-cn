@@ -996,11 +996,10 @@ name = "macros3"
 path = "exercises/macros/macros3.rs"
 mode = "compile"
 hint = """
-In order to use a macro outside of its module, you need to do something
-special to the module to lift the macro out into its parent.
+为了在其模块外使用宏，你需要对模块做点特别的事情来将
+宏提到其父级。
 
-The same trick also works on "extern crate" statements for crates that have
-exported macros, if you've seen any of those around."""
+同样的技巧也适用于使用 "extern crate" 语句导出宏的 creates，如果你见到过的话。"""
 
 [[exercises]]
 name = "macros4"
