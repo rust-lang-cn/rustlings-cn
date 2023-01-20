@@ -1046,8 +1046,7 @@ name = "using_as"
 path = "exercises/conversions/using_as.rs"
 mode = "test"
 hint = """
-Use the `as` operator to cast one of the operands in the last line of the
-`average` function into the expected return type."""
+在 `average` 函数的最后一行使用 `as` 运算符将其中一个对象转换为期待返回的类型。"""
 
 [[exercises]]
 name = "from_into"
