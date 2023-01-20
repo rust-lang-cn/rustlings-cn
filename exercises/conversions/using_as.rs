@@ -5,11 +5,9 @@
 // 目标是确保除法不会编译失败，并返回合适的类型。
 // 执行 `rustlings hint using_as` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 fn average(values: &[f64]) -> f64 {
     let total = values.iter().sum::<f64>();
-    total / values.len()
+    total / values.len() as f64
 }
 
 fn main() {
