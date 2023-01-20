@@ -1053,7 +1053,7 @@ name = "from_into"
 path = "exercises/conversions/from_into.rs"
 mode = "test"
 hint = """
-Follow the steps provided right before the `From` implementation"""
+按照 `From` 实现前提供的步骤操作"""
 
 [[exercises]]
 name = "from_str"
