@@ -22,8 +22,6 @@ enum IntoColorError {
     IntConversion,
 }
 
-// I AM NOT DONE
-
 // 你的任务是完成这个实现并返回一个 Ok 结果，内含一个 Color 类型。
 // 你需要针对一个包含三个整数的元组、一个包含三个整数的数组以及一个整数切片创建实现。
 //
