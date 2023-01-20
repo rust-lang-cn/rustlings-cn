@@ -1,6 +1,6 @@
 // cow1.rs
 
-// 这个练习探索 Cow，或者说 Clone-On-Write（写时复制） 类型。
+// 这个练习探索 Cow，或者说 Clone-On-Write（写时克隆） 类型。
 // Cow 是一个 clone-on-write 智能指针
 // 它可以封装并提供一个借用数据的不可变访问，并当需要修改或所有权时克隆数据。
 // 该类型旨在通过 Borrow trait 处理一般借用数据。
