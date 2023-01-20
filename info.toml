@@ -862,14 +862,14 @@ name = "threads1"
 path = "exercises/threads/threads1.rs"
 mode = "compile"
 hint = """
-`JoinHandle` is a struct that is returned from a spawned thread:
+`JoinHandle` 是一个创建线程时返回的结构体：
 https://doc.rust-lang.org/std/thread/fn.spawn.html
 
-A challenge with multi-threaded applications is that the main thread can
-finish before the spawned threads are completed.
+一个关于多线程应用的挑战是，主线程可以在派生线程完成前结束。
 https://doc.rust-lang.org/book/ch16-01-threads.html#waiting-for-all-threads-to-finish-using-join-handles
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch16-01-threads.html#%E4%BD%BF%E7%94%A8-join-%E7%AD%89%E5%BE%85%E6%89%80%E6%9C%89%E7%BA%BF%E7%A8%8B%E7%BB%93%E6%9D%9F
 
-Collect the JoinHandles and wait for them to finish.
+收集 JoinHandles 并等待它们完成。
 https://doc.rust-lang.org/std/thread/struct.JoinHandle.html
 """
 
@@ -878,29 +878,24 @@ name = "threads2"
 path = "exercises/threads/threads2.rs"
 mode = "compile"
 hint = """
-`Arc` is an Atomic Reference Counted pointer that allows safe, shared access
-to **immutable** data. But we want to *change* the number of `jobs_completed`
-so we'll need to also use another type that will only allow one thread to
-mutate the data at a time. Take a look at this section of the book:
+`Arc` 是一个原子引用计数，允许安全、共享地访问 **不可变** 数据。
+但是我们想要 *改变* `jobs_completed` 的数字，因此，我们还需要使用另一个方法，
+它在一个时间点只允许一个线程修改数据。看看书本的这节：
 https://doc.rust-lang.org/book/ch16-03-shared-state.html#atomic-reference-counting-with-arct
-and keep reading if you'd like more hints :)
+（中文版，译者注）https://rustwiki.org/zh-CN/book/ch16-03-shared-state.html#%E5%8E%9F%E5%AD%90%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0-arct
+并继续阅读，如果你想要获取更多提示 :)
 
 
-Do you now have an `Arc` `Mutex` `JobStatus` at the beginning of main? Like:
+现在你在 main 中有一个 `Arc` `Mutex` `JobStatus` 了吗？比如：
 `let status = Arc::new(Mutex::new(JobStatus { jobs_completed: 0 }));`
-Similar to the code in the example in the book that happens after the text
-that says "We can use Arc<T> to fix this.". If not, give that a try! If you
-do and would like more hints, keep reading!!
+这和书本中的例子中的代码类似。如果没有，试一下！如果你想获得更多提示，保持阅读！！
 
 
-Make sure neither of your threads are holding onto the lock of the mutex
-while they are sleeping, since this will prevent the other thread from
-being allowed to get the lock. Locks are automatically released when
-they go out of scope.
+确保你的线程在休眠前没有持有 mutex 锁，因为这会导致其它线程无法获取锁。
+锁会在它们离开作用域时自动释放。
 
-If you've learned from the sample solutions, I encourage you to come
-back to this exercise and try it again in a few days to reinforce
-what you've learned :)"""
+
+如果你从示例中学到了解决方案，我鼓励你在几天内重返这个练习并再次尝试，以加强你学到的东西 :)"""
 
 [[exercises]]
 name = "threads3"
