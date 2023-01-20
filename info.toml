@@ -1031,7 +1031,7 @@ name = "clippy2"
 path = "exercises/clippy/clippy2.rs"
 mode = "clippy"
 hint = """
-`for` loops over Option values are more clearly expressed as an `if let`"""
+在 Option 值上的 `for` 循环可以更清晰地表达为一个 `if let`"""
 
 [[exercises]]
 name = "clippy3"
