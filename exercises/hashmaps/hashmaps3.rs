@@ -1,24 +1,21 @@
 // hashmaps3.rs
 
-// A list of scores (one per line) of a soccer match is given. Each line
-// is of the form :
-// <team_1_name>,<team_2_name>,<team_1_goals>,<team_2_goals>
-// Example: England,France,4,2 (England scored 4 goals, France 2).
+// 给定一个足球赛的得分列表（每个一行）。
+// 每行的格式如下：
+// <队伍1名字>,<队伍2名字>,<队伍1得分>,<队伍2得分>
+// 比如：英国,法国,4,2（英国得了4分，法国得了2分）。
 
-// You have to build a scores table containing the name of the team, goals
-// the team scored, and goals the team conceded. One approach to build
-// the scores table is to use a Hashmap. The solution is partially
-// written to use a Hashmap, complete it to pass the test.
+// 你需要构建一个得分表，包含队伍的名字、队伍的得分，以及队伍的丢分。
+// 一个构建得分表的方法是使用哈希表。
+// 使用哈希表的解法有部分已经写好了，完成它以通过测试。
 
-// Make me pass the tests!
+// 让我通过测试！
 
 // 执行 `rustlings hint hashmaps3` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 use std::collections::HashMap;
 
-// A structure to store team name and its goal details.
+// 一个存储队伍名字和它的得分详情的结构。
 struct Team {
     name: String,
     goals_scored: u8,
@@ -26,7 +23,7 @@ struct Team {
 }
 
 fn build_scores_table(results: String) -> HashMap<String, Team> {
-    // The name of the team is the key and its associated struct is the value.
+    // 队伍的名字是键，它关联的结构体是值。
     let mut scores: HashMap<String, Team> = HashMap::new();
 
     for r in results.lines() {
@@ -35,11 +32,26 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         let team_1_score: u8 = v[2].parse().unwrap();
         let team_2_name = v[1].to_string();
         let team_2_score: u8 = v[3].parse().unwrap();
-        // TODO: Populate the scores table with details extracted from the
-        // current line. Keep in mind that goals scored by team_1
-        // will be the number of goals conceded from team_2, and similarly
-        // goals scored by team_2 will be the number of goals conceded by
-        // team_1.
+        // TODO: 使用从当前行提取的详细信息填充得分表。
+        // 请记住，队伍1的得分将会是队伍2的丢分，
+        // 同样，队伍2的得分也将会是队伍1的丢分。
+        let team_1_data = scores.entry(team_1_name.clone()).or_insert(Team {
+            name: team_1_name,
+            goals_scored: 0,
+            goals_conceded: 0,
+        });
+
+        team_1_data.goals_scored += team_1_score;
+        team_1_data.goals_conceded += team_2_score;
+
+        let team_2_data = scores.entry(team_2_name.clone()).or_insert(Team {
+            name: team_2_name,
+            goals_scored: 0,
+            goals_conceded: 0,
+        });
+
+        team_2_data.goals_scored += team_2_score;
+        team_2_data.goals_conceded += team_1_score;
     }
     scores
 }

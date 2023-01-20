@@ -1,11 +1,13 @@
 // enums1.rs
 // 这次没有提示！ ;)
 
-// I AM NOT DONE
-
 #[derive(Debug)]
 enum Message {
     // TODO: 定义下面所用的消息类型
+    Quit,
+    Echo,
+    Move,
+    ChangeColor,
 }
 
 fn main() {

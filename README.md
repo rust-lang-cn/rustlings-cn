@@ -38,7 +38,7 @@ curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | 
 # 在 https://github.com/rust-lang/rustlings/releases/latest 获取最新版本 (编辑此文档时是 5.3.0)
 git clone -b 5.3.0 --depth 1 https://github.com/rust-lang/rustlings
 # 译者注：为了降低工作量，该仓库只维护main分支，所以直接克隆本仓库的主分支就行
-git clone -b main --depth 1 https://github.com/focksor/rustlings-cn.git
+git clone -b main --depth 1 https://github.com/rust-lang-cn/rustlings-cn.git
 cd rustlings
 # 如果 nix 版本号 > 2.3
 nix develop
@@ -66,9 +66,9 @@ Start-BitsTransfer -Source https://raw.githubusercontent.com/rust-lang/rustlings
 
 ## 浏览器
 
-[在 Repl.it 运行](https://repl.it/github/focksor/rustlings-cn)
+[在 Repl.it 运行](https://repl.it/github/rust-lang-cn/rustlings-cn)
 
-[![在 Gitpod 打开](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/focksor/rustlings-cn)
+[![在 Gitpod 打开](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/rust-lang-cn/rustlings-cn)
 
 ## 手动安装
 
@@ -78,7 +78,7 @@ Start-BitsTransfer -Source https://raw.githubusercontent.com/rust-lang/rustlings
 # 在 https://github.com/rust-lang/rustlings/releases/latest 获取最新版本 (编辑此文档时是 5.3.0)
 git clone -b 5.3.0 --depth 1 https://github.com/rust-lang/rustlings
 # 译者注：为了降低工作量，该仓库只维护main分支，所以直接克隆本仓库的主分支就行
-git clone -b main --depth 1 https://github.com/focksor/rustlings-cn.git
+git clone -b main --depth 1 https://github.com/rust-lang-cn/rustlings-cn.git
 cd rustlings
 cargo install --force --path .
 ```

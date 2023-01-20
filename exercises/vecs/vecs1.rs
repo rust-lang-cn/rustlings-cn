@@ -6,11 +6,9 @@
 // Make me compile and pass the test!
 // 执行 `rustlings hint vecs1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     let a = [10, 20, 30, 40]; // 一个平平无奇的数组
-    let v = // TODO: 使用 vectors 宏在这里定义你的 vector
+    let v = vec![10, 20, 30, 40]; // TODO: 使用 vectors 宏在这里定义你的 vector
 
     (a, v)
 }

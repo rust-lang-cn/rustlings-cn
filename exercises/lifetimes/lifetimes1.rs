@@ -1,15 +1,13 @@
 // lifetimes1.rs
 //
-// The Rust compiler needs to know how to check whether supplied references are
-// valid, so that it can let the programmer know if a reference is at risk
-// of going out of scope before it is used. Remember, references are borrows
-// and do not own their own data. What if their owner goes out of scope?
+// Rust 编译器需要知道如何确认提供的引用是有效的，
+// 因此它可以让程序员知道一个引用是否有在使用前超出作用域的风险。
+// 记住，引用是借用，并且没有拥有它们自己的数据。
+// 如果它们的所有者超出作用域呢？
 //
 // 执行 `rustlings hint lifetimes1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
-fn longest(x: &str, y: &str) -> &str {
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() {
         x
     } else {

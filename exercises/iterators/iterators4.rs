@@ -1,18 +1,18 @@
 // iterators4.rs
 // 执行 `rustlings hint iterators4` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 pub fn factorial(num: u64) -> u64 {
-    // Complete this function to return the factorial of num
-    // Do not use:
+    // 完成这个函数以返回 num 的阶乘
+    // 不要使用
     // - return
-    // Try not to use:
-    // - imperative style loops (for, while)
-    // - additional variables
-    // For an extra challenge, don't use:
-    // - recursion
-    // 执行 `rustlings hint iterators4` for hints.
+    // 尝试不要使用
+    // - 命令式循环 (for, while)
+    // - 额外的变量
+    // 额外的挑战，不要使用：
+    // - 递归
+    // 执行 `rustlings hint iterators4` 获取提示。
+
+    (1..=num).fold(1u64, |a, b| a * b)
 }
 
 #[cfg(test)]
