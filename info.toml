@@ -816,19 +816,17 @@ name = "iterators3"
 path = "exercises/iterators/iterators3.rs"
 mode = "test"
 hint = """
-The divide function needs to return the correct error when even division is not
-possible.
+当不能整除时，divide 函数需要返回正确的错误。
 
-The division_results variable needs to be collected into a collection type.
+division_results 需要被 collect 为正确的类型。
 
-The result_with_list function needs to return a single Result where the success
-case is a vector of integers and the failure case is a DivisionError.
+result_with_list 需要返回单个 Result，其中成功情况是一个整数 vector，失败情况是一个 DivisionError。
 
-The list_of_results function needs to return a vector of results.
+list_of_results 需要返回一个 result vector。
 
-See https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect for how
-the `FromIterator` trait is used in `collect()`. This trait is REALLY powerful! It
-can make the solution to this exercise infinitely easier."""
+查看 https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect 看看
+`FromIterator` trait 是如何在 `collect()` 中使用的。这个 trait 非常强力！
+它可以使这个练习的解决方法特别简单。"""
 
 [[exercises]]
 name = "iterators4"
