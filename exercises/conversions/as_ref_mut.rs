@@ -3,25 +3,23 @@
 // 和 https://doc.rust-lang.org/std/convert/trait.AsMut.html，分别地。
 // 执行 `rustlings hint as_ref_mut` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 // 获取给定参数的字节数（不是字符数）
 // TODO: 添加适当的用于 AsRef 的 trait bound。
-fn byte_counter<T>(arg: T) -> usize {
+fn byte_counter<T: AsRef<str>>(arg: T) -> usize {
     arg.as_ref().as_bytes().len()
 }
 
 // 获取给定参数的字符数（不是字节数）
 // TODO: 添加适当的用于 AsRef 的 trait bound。
-fn char_counter<T>(arg: T) -> usize {
+fn char_counter<T: AsRef<str>>(arg: T) -> usize {
     arg.as_ref().chars().count()
 }
 
 // 使用 as_mut() 将数字平方。
 // TODO: 添加适当的 trait bound。
-fn num_sq<T>(arg: &mut T) {
+fn num_sq<T: AsMut<u32>>(arg: &mut T) {
     // TODO: 实现函数体。
-    ???
+    *arg.as_mut() *= *arg.as_mut();
 }
 
 #[cfg(test)]
