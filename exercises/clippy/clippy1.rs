@@ -5,12 +5,10 @@
 // 检查 clippy 的输出的建议以解决练习。
 // 执行 `rustlings hint clippy1` 或在观察模式下使用 `hint` 子命令来获取提示。
 
-// I AM NOT DONE
-
 use std::f32;
 
 fn main() {
-    let pi = 3.14f32;
+    let pi = f32::consts::PI;
     let radius = 5.00f32;
 
     let area = pi * f32::powi(radius, 2);
