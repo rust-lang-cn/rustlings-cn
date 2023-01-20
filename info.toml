@@ -987,11 +987,9 @@ name = "macros2"
 path = "exercises/macros/macros2.rs"
 mode = "compile"
 hint = """
-Macros don't quite play by the same rules as the rest of Rust, in terms of
-what's available where.
+在关于可用处部分，Rust 的宏和其它部分不完全遵循相同的规则。
 
-Unlike other things in Rust, the order of "where you define a macro" versus
-"where you use it" actually matters."""
+不像 Rust 的其它东西，"你定义宏的位置" 和 "你使用宏的位置" 的顺序实际上会影响。"""
 
 [[exercises]]
 name = "macros3"
