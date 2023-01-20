@@ -966,10 +966,10 @@ name = "cow1"
 path = "exercises/smart_pointers/cow1.rs"
 mode = "compile"
 hint = """
-Since the vector is already owned, the `Cow` type doesn't need to clone it.
+由于 vector 已经被持有了，`Cow` 类型不需要 clone 它。
 
-Checkout https://doc.rust-lang.org/std/borrow/enum.Cow.html for documentation
-on the `Cow` type.
+查看关于 `Cow` 类型的文档：
+https://doc.rust-lang.org/std/borrow/enum.Cow.html
 """
 
 # MACROS
