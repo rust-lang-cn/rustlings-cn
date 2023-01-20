@@ -1060,19 +1060,16 @@ name = "from_str"
 path = "exercises/conversions/from_str.rs"
 mode = "test"
 hint = """
-The implementation of FromStr should return an Ok with a Person object,
-or an Err with an error if the string is not valid.
+FromStr 的实现应返回一个包含 Person对象的 Ok，
+或者如果字符串无效时的话返回一个 Err。
 
-This is almost like the `from_into` exercise, but returning errors instead
-of falling back to a default value.
+这个很像 `from_into` 练习，但是返回错误而不是回退到默认值。
 
-Look at the test cases to see which error variants to return.
+看一下测试用例来看看返回了什么错误变量。
 
-Another hint: You can use the `map_err` method of `Result` with a function
-or a closure to wrap the error from `parse::<usize>`.
+另一个提示：你可以使用 `Result` 的 `map_err` 方法于函数或闭包上包装来自 `parse::<usize>` 的错误。
 
-Yet another hint: If you would like to propagate errors by using the `?`
-operator in your solution, you might want to look at
+还有另一个提示：如果你想要在你的解决方案中通过 `?` 运算符传播错误，你可能想要看看：
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html
 """
 
