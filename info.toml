@@ -410,7 +410,7 @@ name = "strings1"
 path = "exercises/strings/strings1.rs"
 mode = "compile"
 hint = """
-`current_favorite_color` 函数现在返回了一个字符串切片，这个切片的声明周期为 `'static`。
+`current_favorite_color` 函数现在返回了一个字符串切片，这个切片的生命周期为 `'static`。
 我们知道这一点是因为字符串存在于我们的代码本身 -- 它不来自于文件或用户输入或其它程序 -- 所以它将随着我们的程序存在。
 但是它仍然使一个字符串切片。有个通过转换字符串切片来创建一个 `String` 的方法，
 它在书本的 字符串 章节，还有一个方法是使用 `From` trait。"""
