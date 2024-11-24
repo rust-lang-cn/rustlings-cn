@@ -1,5 +1,5 @@
 // primitive_types5.rs
-// 结构 `cat` 元组，使 println 可以正常工作。
+// 解构 `cat` 元组，使 println 可以正常工作。
 // Destructure the `cat` tuple so that the println will work.
 // 执行 `rustlings hint primitive_types5` 或在观察模式下使用 `hint` 子命令来获取提示。
 
